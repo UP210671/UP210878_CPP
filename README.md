@@ -23,4 +23,5 @@ Here's my report of my learning during my **programming assigment**.
 I *don't* know  
 What *else*  
 To put at ***this point***  
-> "Amazing" - New York Times
+> "Amazing" - New York Times  
+![Imagen Portada](https://github.com/UP210878/UP210878_CPP/blob/main/Imagenes/sol.jpeg)
