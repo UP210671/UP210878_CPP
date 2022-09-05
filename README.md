@@ -25,3 +25,11 @@ What *else*
 To put at ***this point***  
 > "Amazing" - New York Times  
 ![Imagen Portada](https://github.com/UP210878/UP210878_CPP/blob/main/Imagenes/sol.jpeg)
+
+cd: cambiar directorio  
+ls: analizar archivos  
+nano: Modifica archivo  
+SUBIR ARCHIVO:  
+git add  
+git commit -m " "  
+git push  
