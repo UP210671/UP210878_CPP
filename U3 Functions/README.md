@@ -1,7 +1,7 @@
 <h1 align="center">
 WELCOME TO UNIT 3: FUNCTIONS
 
-### I honestly don't know what it refers with functions, I'm assuming is programming related
+### I honestly don't know what it refers with functions, I'm assuming its programming related
 This section is a W. I. P. I haven't done anything in this unit yet; which means it won't have as much fancy stuff as you'd like to see until later. This time I've even made the image myself :) .
 
 ![Cycle](https://github.com/UP210878/UP210878_CPP/blob/main/U3%20Functions/Images/function.PNG?raw=true)  
