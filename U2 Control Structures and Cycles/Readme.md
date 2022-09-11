@@ -2,9 +2,13 @@
 WELCOME TO UNIT 1: CONTROL STRUCTURES AND CYCLES
 
 ### This unit is about control structures and cycles, shocking.
-This section is a W. I. P. I haven't done anything in this unit yet; which means it won't have as much fancy stuff as you'd like to see until later. Because I've figured that it would be best to have a related image, the cat has sadly been replaced by this nice boring cycle I've found randomly.
+This section is a W. I. P. I haven't done anything in this unit yet; which means it won't have as much fancy stuff as you'd like to see until later. Because I've figured that it would be best to have a related image, the cat has sadly been replaced by this nice boring cycle I've found randomly on the internet.
 
-![Cycle](https://bigwater.consulting/wp-content/uploads/2019/04/SDLC_BWC.png)  
+<img src="https://mozwebdev.in/wp-content/uploads/2021/11/software-development.png" 
+        alt="Picture" 
+        width="400" 
+        height="400" 
+        style="display: block; margin: 0 auto" />
 
 
 <h2 align="center">
