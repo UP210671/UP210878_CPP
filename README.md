@@ -40,6 +40,6 @@ git commit -m " "
 git push  
 
 
-# I don't have linux yet neither do I possess a laptop. Let's see how far windows can take us.
+# I don't have linux yet, neither do I possess a laptop. Let's see how far windows can take us.
 
 ![RelevantImage](https://www.emaratalyoum.com/polopoly_fs/1.1410304.1602783749!/image/image.jpg)
