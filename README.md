@@ -2,11 +2,8 @@
 ## Welcome to Vincent Repository.
 Here's my report of my learning during my **programming assigment**.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png" 
-        alt="C++" 
-        width="250" 
-        height="300" 
-        style="display: block; margin: 0 auto" />
+<p align="center">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png">
 
 ## Hope you enjoy.
 This unit will be divided in four Units:
