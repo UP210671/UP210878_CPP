@@ -10,6 +10,9 @@ Hope you enjoy.
 
 ##
 
+<div align ="right">
+<img alt="c++" height="200" src="Imagenes/velita.gif"/>
+</div>
 
 This unit will be divided in four Units:
 > [U1 Programming Introduction](https://github.com/UP210878/UP210878_CPP/tree/main/U1%20Programming%20Introduction)  
