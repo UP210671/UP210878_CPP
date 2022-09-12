@@ -9,6 +9,8 @@
 Hope you enjoy.
 
 ##
+<p align="center">
+    <img height="100" src="https://gifer.com/en/TxLD">
 
 This unit will be divided in four Units:
 > U1 Programming Introduction  
@@ -16,14 +18,7 @@ This unit will be divided in four Units:
 > U3 Functions  
 > U4 Files and Arrays  
 
-# U1 Summary
-Quick summary or review about the things we see during this unit.
-# U2 Summary
-Quick explanation about this unit
-# U3 Summary
-[Redacted]
-# U4 Summary
-[Quick explanation]  
+
 # Console Commands
 ## General Commands  
 cd - change directory  
