@@ -10,20 +10,17 @@ Hope you enjoy.
 
 ##
 
-This unit will be divided in four Units:
-> U1 Programming Introduction  
-> U2 Control Structures and Cycles  
-> U3 Functions  
-> U4 Files and Arrays  
 
-# U1 Summary
-Quick summary or review about the things we see during this unit.
-# U2 Summary
-Quick explanation about this unit
-# U3 Summary
-[Redacted]
-# U4 Summary
-[Quick explanation]  
+This unit will be divided in four Units:
+> [U1 Programming Introduction](https://github.com/UP210878/UP210878_CPP/tree/main/U1%20Programming%20Introduction)  
+> [U2 Control Structures and Cycles](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles)  
+> [U3 Functions](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions)  
+> [U4 Files and Arrays](https://github.com/UP210878/UP210878_CPP/tree/main/U4%20Files%20and%20Arrays)  
+
+<div align ="right">
+<img alt="c++" height="200" src="Imagenes/velita.gif"/>
+</div>    
+
 # Console Commands
 ## General Commands  
 cd - change directory  
@@ -40,6 +37,6 @@ git commit -m " "
 git push  
 
 
-# I don't have linux yet neither do I possess a laptop. Let's see how far windows can take us.
+# I don't have linux yet, neither do I possess a laptop. Let's see how far windows can take us.
 
 ![RelevantImage](https://www.emaratalyoum.com/polopoly_fs/1.1410304.1602783749!/image/image.jpg)
