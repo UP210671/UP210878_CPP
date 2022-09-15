@@ -8,18 +8,22 @@ This section is a W. I. P. I haven't done anything in this unit yet; which means
 
 
 <h2 align="center">
-Practice 1 [Title]
+Practice 1 [Hola]
 </h4>
 
+
 ### Preview  
-Images about the software executing. A preview in other words. ![Welp](https://thumbs.dreamstime.com/b/shrug-del-hombre-de-negocios-267725.jpg)
+
+<div align ="right">
+<img alt="c++" height="200" src="U1 Programming Introduction/Imagenes/Practica1.png"/>
+</div>    
+
+
 ### Summary
-Short explanation about what the executable does.
+Test file, basics about programming.
 ### Explanation
-Detailed explanation about how the software works.
-Maybe I can even add the steps I took to make the program. Like this:
-> Step one: Do this  
-> Step two: ???  
-> Step three: Done  
-### Sources (If any)
-In case I consult additional sources to help the realization of the project.
+The program just writes a simple sentence
+> Step 1: Add libraries(iostream)  
+> Step 2: Add namespace std to make the iostream more comfortable to use  
+> Step 3: Write a phrase using the std::cout command  
+> Step 4: Compile and execute  
