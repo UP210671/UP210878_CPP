@@ -15,7 +15,7 @@ Last Modification: -
 
 int main(){ //Main function
     using namespace std;
-    cout << "Hello World! How ya doing?:)";//Print on screen a text
+    cout << "Hello World! This is my first program" << endl << "How ya doing?:)" << endl;//Print on screen a text
     
     return 0;//Return 0 is to see that the program is working and that it returns a whole value.
 }
