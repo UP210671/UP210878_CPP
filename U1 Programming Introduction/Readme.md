@@ -1,10 +1,10 @@
 <h1 align="center">
 WELCOME TO UNIT 1: PROGRAMMING INTRODUCTION
 
-### This unit is about the basics in programming  (¿)
-This section is a W. I. P. I haven't done anything in this unit yet; which means it won't have as much fancy stuff as you'd like to see until later. In the meantime, enjoy this **cat.** 
+### This unit is about the basics in programming
+In this repository you'll see the first programs I'll make for this class. It mostly encompasses about basic stuff like data sizes, using formats, learning to code properly, setting up preprocessor instructions, making nice readme.md and all sort of stuff.  
 
-![Cat](https://www.foundanimals.org/wp-content/uploads/2020/02/Kitten.jpg)  
+##Hope you enjoy  
 
 
 <h2 align="center">
