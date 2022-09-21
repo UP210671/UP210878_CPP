@@ -23,7 +23,7 @@ int main(){
     unsigned long long int hardcore = 230482304829;
     float flotante = 2.565464645654;
     double grande = 2.565465654654;
-    char character = 12;
+    char character = 83;
 
     cout << "Tipos de datos: " << endl;
 
