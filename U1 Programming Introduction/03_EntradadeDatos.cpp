@@ -20,17 +20,41 @@ int main() {
     double grande;
     char caracter;
 
+    cout << "---------------Ingreso de datos por el usuario---------------- " << endl;
+    cout << "Ingresa un dato de tipo entero: " << endl;
+    cin >> entero;
+    cout << "El dato ingresado es: " << entero << endl;
+
+    cout << "Ingresa un dato de tipo flotante: " << endl;
+    cin >> flotante;
+    cout << "El dato ingresado es: " << flotante << endl;
+
+    cout << "Ingresa un dato de tipo double: " << endl;
+    cin >> grande;
+    cout << "El dato ingresado es: " << grande << endl;
+
+    cout << "Ingresa un dato de tipo caracter: " << endl;
+    cin >> caracter;
+    cout << "El dato ingresado es: " << caracter << endl;
+
+    printf("\n===========================\n\n"); //Usando printf y scanf (Wakala)
+
     printf("Este programa muestra el ingreso de datos por el usuario. \n");
     printf("Ingresa un dato de tipo entero: ");
     scanf("%d", &entero);
     printf("El dato ingresado es:  %d \n", entero);
 
-    printf("\n===========================\n\n");
+    printf("Ingresa un dato de tipo flotante: ");
+    scanf("%f", &flotante);
+    printf("El dato ingresado es:  %f \n", flotante);
 
-    cout << "Usando cout e cin (iostream): " << endl;
-    cout << "Ingresa un dato de tipo entero: " << endl;
-    cin >> entero;
-    cout << "El dato ingresado es: " << entero << endl;
+    printf("Ingresa un dato de tipo double: ");
+    scanf("%lf", &grande);
+    printf("El dato ingresado es:  %lf \n", grande);
+
+    printf("Ingresa un dato de tipo caracter: ");
+    scanf("%s", &caracter);
+    printf("El dato ingresado es:  %c \n", caracter);
 
     return 0;
 }
