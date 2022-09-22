@@ -73,5 +73,5 @@ Input heavy file. The program asks the user to input a different type of value i
 > Step 3: Establish different data types at the start.    
 > Step 4: Write an output to the data inputed by the user.  
 > Step 5: Add a variant program that uses stdio.h and its different forms for inputting values.  
-> Step 6: Compile and execute.
+> Step 6: Compile and execute.  
 > Step 7: Always assume the user is low IQ; test different nonsensical values  
