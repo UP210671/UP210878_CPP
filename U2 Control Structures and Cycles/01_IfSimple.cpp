@@ -22,16 +22,23 @@ int main(){
     if (num == data){//Boolean check
         cout << "El numero es igual al dato" << endl;
     } 
-    else
+    
     if (num > data){//Big number check
         cout << "El numero es mayor al dato" << endl;
     }
-    else
+
+   if (num >= data){//BigEqual number check
+        cout << "El numero es mayor o igual al dato" << endl;
+    }
+
     if (num < data){//Lil number check
         cout << "El numero es menor al dato" << endl;
-
     }
-    else
+    
+   if (num <= data){//LilEqual number check
+        cout << "El numero es menor o igual al dato" << endl;
+    }
+
     if (num != data){//Dif number check
         cout << "El numero es distinto al dato" << endl;
     }
