@@ -30,12 +30,42 @@ pantalla el tipo impositivo que le corresponde.
 //------------------ MAIN FUNCTION ---------------------
 
 int main(){
-    int Renta, Descuento;
-    cout << "Ingrese su pago de renta";
+    float Renta; 
+    float Impuesto;
+    cout << "Ingrese su renta anual:" << endl;
     cin >> Renta;
-    if(Renta>=60000){
-        Descuento=Renta*.45
+    if (Renta > 0 )
+    {
+        if (Renta >= 60000)
+        {
+            Impuesto = Renta*.45;
+        }
+        else if (Renta >= 35000)
+        {
+            Impuesto = Renta*.30;
+        }
+        else if (Renta >= 20000)
+        {
+            Impuesto = Renta*.20;
+        }
+        else if (Renta >= 10000)
+        {
+            Impuesto = Renta*.15;
+        }
+        else if (Renta >= 0)
+        {
+            Impuesto = Renta*.05;
+        }
+        //Visualización de datos
+        cout << endl << "Su renta es de: $" << Renta << endl;
+        cout << "Con un impuesto del " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl;
+        cout << "Usted tiene que pagar un total de: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n";
+        cout << "RENTA      IMPUESTO(%)     IMPUESTO($)     TOTAL($)"<< endl;
+        cout << "$ " << Renta << "      " << (Impuesto/Renta)*100 << "%             $ " << Impuesto << "         $ " << Renta + Impuesto << endl;
     }
-
+    else 
+    {
+        cout << "El dato que usted ingreso es incorrecto :( ; porfavor, intentelo de nuevo" << endl;//En caso de que el usuario no use un valor decimal o entero.
+    }
     return 0;
 }
