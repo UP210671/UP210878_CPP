@@ -15,7 +15,7 @@ Practice 1 [Hola]
 ### Preview  
 
 <div align ="center">
-<img alt="c++" height="500" src="Imagenes/Practica1.png"/>
+<img alt="Practica 1" height="400" src="Imagenes/Practica1.png"/>
 </div>    
 
 
@@ -36,9 +36,7 @@ Practice 2 [Types of Data]
 
 ### Preview  
 
-<div align ="right">
-<img alt="c++" height="200" src="U1 Programming Introduction/Imagenes/Practica1.png"/>
-</div>    
+
 
 
 ### Summary
@@ -60,9 +58,6 @@ Practice 3 [Data Inputs]
 
 ### Preview  
 
-<div align ="right">
-<img alt="c++" height="200" src="U1 Programming Introduction/Imagenes/Practica1.png"/>
-</div>    
 
 
 ### Summary
