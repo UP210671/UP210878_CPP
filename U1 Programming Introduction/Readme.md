@@ -48,7 +48,7 @@ This programm visualizes a data value and its size in bytes. For example, a floa
 > Step 1: Add libraries(iostream & stdio.h)[Preprocesor directives]  
 > Step 2: Add namespace std to make iostream easier to use.  
 > Step 3: Establish different types of data at the start of the program. i.e Int, float, double.  
-> Step 4: Print different established values and number of size in bytes using function sizeof().
+> Step 4: Print different established values and number of size in bytes using function sizeof().  
 > Step 5: Write variant program that uses stdio.h library commands.  
 > Step 6: Compile and execute.  
 
