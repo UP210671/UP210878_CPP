@@ -15,7 +15,7 @@ Practice 1 [Hola]
 ### Preview  
 
 <div align ="center">
-<img alt="c++" height="200" src="Imagenes/Practica1.png"/>
+<img alt="c++" height="500" src="Imagenes/Practica1.png"/>
 </div>    
 
 
