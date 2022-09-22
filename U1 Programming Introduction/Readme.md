@@ -65,9 +65,9 @@ Practice 3 [Data Inputs]
 </div>  
 
 ### Summary
-Test file, basics about programming.
+Input file, asks the user to type in a data type; prints out data input. File for testing different values in wrong data to see what happens.  
 ### Explanation
-The program just writes a simple sentence
+Input heavy file. The program asks the user to input a different type of value in each ocassion, it then prints out the input to see if it matches the data-type the program asks for. The program repeats itself two times but the second time it uses stdio.h library commands.    
 > Step 1: Add libraries(iostream & stdio.h)[Preprocessor Directives]  
 > Step 2: Add namespace std to make the iostream easier to use.  
 > Step 3: Establish different data types at the start.    
