@@ -15,7 +15,7 @@ Practice 1 [Hola]
 ### Preview  
 
 <div align ="center">
-<img alt="Practica 1" height="400" src="Imagenes/Practica1.png"/>
+<img alt="Practica 1" height="500" src="Imagenes/Practica1.png"/>
 </div>    
 
 
@@ -36,7 +36,9 @@ Practice 2 [Types of Data]
 
 ### Preview  
 
-
+<div align ="center">
+<img alt="Practica 2" height="500" src="Imagenes/Practica2.png"/>
+</div>  
 
 
 ### Summary
@@ -58,7 +60,9 @@ Practice 3 [Data Inputs]
 
 ### Preview  
 
-
+<div align ="center">
+<img alt="Practica 3" height="500" src="Imagenes/Practica3.png"/>
+</div>  
 
 ### Summary
 Test file, basics about programming.
