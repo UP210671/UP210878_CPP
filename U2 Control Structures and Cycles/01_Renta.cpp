@@ -56,7 +56,7 @@ int main(){
         {
             Impuesto = Renta*.05;
         }
-        //Visualización de datos
+        //Print out everything
         cout << endl << "Su renta es de: $" << Renta << endl;//Rent value inputted
         cout << "Con un impuesto del " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl; //Print out tax percentage followed by money value
         cout << "Usted tiene que pagar un total de: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
