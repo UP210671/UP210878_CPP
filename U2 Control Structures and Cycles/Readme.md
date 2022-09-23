@@ -1,26 +1,65 @@
 <h1 align="center">
-WELCOME TO UNIT 1: CONTROL STRUCTURES AND CYCLES
+WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
-### This unit is about control structures and cycles, shocking.
-This section is a W. I. P. I haven't done anything in this unit yet; which means it won't have as much fancy stuff as you'd like to see until later. Because I've figured that it would be best to have a related image, the cat has sadly been replaced by this nice boring cycle I've found randomly on the internet.
+### This unit is about control structures and cycles.
+This unit is about cycles and control structures (i.e: if, if else, for...). During this unit we actually had to make use of our creativity and brain to solve problems (Unlike previous unit which really was just an introduction to programming and using github). Hope you enjoy.
 
 <p align="center">
     <img src="https://mozwebdev.in/wp-content/uploads/2021/11/software-development.png">
-p>
+
 
 <h2 align="center">
-Practice 1 [Title]
+Practice 1.- Renta [Program for calculating taxes for an anual rent based on a value the user inputs]
 </h4>
 
-### Preview  
-Images about the software executing. A preview in other words. ![WIP](https://thumbs.dreamstime.com/b/shrug-del-hombre-de-negocios-267725.jpg)
-### Summary
-Short explanation about what the executable does.
+### Preview Main Function  
+ >  cout << "Ingrese su renta anual:" << endl;  
+    cin >> Renta;  
+    if (Renta > 0 )  
+    {  
+        if (Renta >= 60000)  
+        {  
+            Impuesto = Renta*.45;  
+        }  
+        else if (Renta >= 35000)  
+        {  
+            Impuesto = Renta*.30;  
+        }  
+        else if (Renta >= 20000)  
+        {  
+            Impuesto = Renta*.20;  
+        }  
+        else if (Renta >= 10000)  
+        {  
+            Impuesto = Renta*.15;  
+        }  
+        else if (Renta >= 0)  
+        {  
+            Impuesto = Renta*.05;  
+        } 
+
+
+
 ### Explanation
-Detailed explanation about how the software works.
-Maybe I can even add the steps I took to make the program. Like this:
-> Step one: Do this  
-> Step two: ???  
-> Step three: Done  
-### Sources (If any)
-In case I consult additional sources to help the realization of the project.
+> 1. Ask the user to write their annual rent.
+> 2. The user types in their annual rent.
+> 3. Through the use of _if_ , verify that the user typed in a valid number in the rent.
+> 4. If the user types in a wrong number, don't run the program.
+> 5. If the user types in a valid number proceed with the main _if_ function:  
+>   5.1. Check the data value and run it through a bunch of _if_ and _if else_ in descending order.  
+>   5.2. If the value is bigger than 60000, multiply the tax value by .45 to symbolise that the tax is 45%. If the value is bigger than 35000, apply a tax of 30% by multiplying it by .30 and so on.  
+>  6. Print out the rent the user initially pays, the tax percentage, the tax value and print out the total of rent the user must pay.
+> 7. Use Return 0 to check if the program is running correctly.
+### Tests
+One for each case:  
+a) +60000  
+
+b) 35000-59999  
+
+c) 20000-34999  
+
+d) 10000-1999  
+
+e) 1-9999  
+
+

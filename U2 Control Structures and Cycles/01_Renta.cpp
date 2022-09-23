@@ -34,7 +34,7 @@ int main(){
     float Impuesto;
     cout << "Ingrese su renta anual:" << endl;
     cin >> Renta;
-    if (Renta > 0 )
+    if (Renta > 0 )//Is the input a valid number?
     {
         if (Renta >= 60000)
         {
@@ -57,15 +57,15 @@ int main(){
             Impuesto = Renta*.05;
         }
         //Visualización de datos
-        cout << endl << "Su renta es de: $" << Renta << endl;
-        cout << "Con un impuesto del " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl;
-        cout << "Usted tiene que pagar un total de: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n";
+        cout << endl << "Su renta es de: $" << Renta << endl;//Rent value inputted
+        cout << "Con un impuesto del " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl; //Print out tax percentage followed by money value
+        cout << "Usted tiene que pagar un total de: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
         cout << "RENTA      IMPUESTO(%)     IMPUESTO($)     TOTAL($)"<< endl;
         cout << "$ " << Renta << "      " << (Impuesto/Renta)*100 << "%             $ " << Impuesto << "         $ " << Renta + Impuesto << endl;
     }
     else 
     {
-        cout << "El dato que usted ingreso es incorrecto :( ; porfavor, intentelo de nuevo" << endl;//En caso de que el usuario no use un valor decimal o entero.
+        cout << "El dato que usted ingreso es incorrecto :( ; porfavor, intentelo de nuevo" << endl;//In case the value is not valid; ask the user to try again.
     }
     return 0;
 }
