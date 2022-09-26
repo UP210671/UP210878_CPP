@@ -102,22 +102,29 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
 
 ### Tests
 a) Unacceptable
+
 <div align ="center">
 <img alt="unacceptable" height="150" src="Imagenes/unacceptable.png"/>
 </div> 
+
 b) Acceptable
+
 <div align ="center">
 <img alt="acceptable" height="150" src="Imagenes/acceptable.png"/>
 </div> 
+
 c) Meritorious
+
 <div align ="center">
 <img alt="meritorious" height="150" src="Imagenes/merit.png"/>
 </div> 
+
 d) Invalid
+
 <div align ="center">
 <img alt="invalid" height="150" src="Imagenes/invalid.png"/>
 </div> 
-<h1 align="center">
 
+<h1 align="center">
 Practice 3.-
 </h4>
