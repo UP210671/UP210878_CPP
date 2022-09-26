@@ -116,13 +116,13 @@ b) Acceptable
 c) Meritorious
 
 <div align ="center">
-<img alt="meritorious" height="150" src="Imagenes/merit.png"/>
+<img alt="meritorious" height="150" src="Imagenes/merit.PNG"/>
 </div> 
 
 d) Invalid
 
 <div align ="center">
-<img alt="invalid" height="150" src="Imagenes/invalid.png"/>
+<img alt="invalid" height="150" src="Imagenes/invalid.PNG"/>
 </div> 
 
 <h1 align="center">
