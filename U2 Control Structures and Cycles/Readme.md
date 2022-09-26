@@ -95,8 +95,29 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
     }    
 
 ### Explanation
-1. Ask the user about their calification on a scale on 0 to 1 (Where 1 is 100%)
-2. Print out wheter the 
-3. 
+1. Ask the user about their qualification on a scale on 0 to 1 (Where 1 is 100% and 0 is 0%)
+2. If the user types a value other than 0, 0.4 or a number bigger than 0.6, the program does not run and it says that the qualification is invalid.
+3. If the user types in a valid value, print out what level the employee has followed up by the bonus percentage and value.
+4. Return 0 to check that the program is executing correctly.
 
 ### Tests
+a) Unacceptable
+<div align ="center">
+<img alt="unacceptable" height="150" src="Imagenes/unacceptable.png"/>
+</div> 
+b) Acceptable
+<div align ="center">
+<img alt="acceptable" height="150" src="Imagenes/acceptable.png"/>
+</div> 
+c) Meritorious
+<div align ="center">
+<img alt="meritorious" height="150" src="Imagenes/merit.png"/>
+</div> 
+d) Invalid
+<div align ="center">
+<img alt="invalid" height="150" src="Imagenes/invalid.png"/>
+</div> 
+<h1 align="center">
+
+Practice 3.-
+</h4>
