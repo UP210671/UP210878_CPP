@@ -54,23 +54,23 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
 One for each case:  
 a) +60000  
 <div align ="center">
-<img alt="45" height="500" src="Imagenes/45percent.png"/>
+<img alt="45" height="150" src="Imagenes/45percent.png"/>
 </div>  
 b) 35000-59999  
 <div align ="center">
-<img alt="30" height="500" src="Imagenes/30percent.png"/>
+<img alt="30" height="150" src="Imagenes/30percent.png"/>
 </div>  
 c) 20000-34999  
 <div align ="center">
-<img alt="20" height="500" src="Imagenes/20percent.png"/>
+<img alt="20" height="150" src="Imagenes/20percent.png"/>
 </div>  
 d) 10000-1999  
 <div align ="center">
-<img alt="15" height="500" src="Imagenes/15percent.png"/>
+<img alt="15" height="150" src="Imagenes/15percent.png"/>
 </div>  
 e) 1-9999  
 <div align ="center">
-<img alt="5" height="500" src="Imagenes/5Percent.png"/>
+<img alt="5" height="150" src="Imagenes/5Percent.png"/>
 </div>  
   
 # Practice 2
