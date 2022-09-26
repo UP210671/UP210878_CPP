@@ -15,7 +15,7 @@ using namespace std;
 //---------------------- ISSUE -------------------------
 
 /*
-Bono de 2400 en base a su calificacin anual
+Bono de 2400 en base a su calificacion anual
 
 Nivel   Puntuacion
 Inaceptable 0.0
@@ -45,27 +45,3 @@ int main(){
     }
     return 0;
 }
-
-
-/*int main(){
-    float calificacion, bono=2400, bonus;
-    cout << "Cual es la calificacion del empleado\n";
-    cin >> calificacion;
-    if (calificacion>=0.6){
-        bonus=bono*calificacion;
-    } 
-    else if (calificacion=0.4){
-        bonus=bono*.4;
-    }
-    else if (calificacion=0.0){
-        bonus=0;
-    } 
-    else{
-        cout << "\nSu calificacion no entra entre los parametros de evaluacion para el bono, lo sentimos.\n";
-    }
-    cout << "\nSu calificacion es de " << calificacion << " por lo que tiene un recibira un bono de " << calificacion*100 << "% \n";
-    cout << "Se le pagara un bono de " << bonus << "$\n";
-
-    return 0;
-}
-*/
