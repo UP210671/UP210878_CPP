@@ -41,15 +41,15 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
 
 
 ### Explanation
-> 1. Ask the user to write their annual rent.
-> 2. The user types in their annual rent.
-> 3. Through the use of _if_ , verify that the user typed in a valid number in the rent.
-> 4. If the user types in a wrong number, don't run the program.
-> 5. If the user types in a valid number proceed with the main _if_ function:  
->   5.1. Check the data value and run it through a bunch of _if_ and _if else_ in descending order.  
->   5.2. If the value is bigger than 60000, multiply the tax value by .45 to symbolise that the tax is 45%. If the value is bigger than 35000, apply a tax of 30% by multiplying it by .30 and so on.  
->  6. Print out the rent the user initially pays, the tax percentage, the tax value and print out the total of rent the user must pay.
-> 7. Use Return 0 to check if the program is running correctly.
+1. Ask the user to write their annual rent.
+2. The user types in their annual rent.
+3. Through the use of _if_ , verify that the user typed in a valid number in the rent.
+4. If the user types in a wrong number, don't run the program.
+5. If the user types in a valid number proceed with the main _if_ function:  
+5.1. Check the data value and run it through a bunch of _if_ and _if else_ in descending order.  
+5.2. If the value is bigger than 60000, multiply the tax value by .45 to symbolise that the tax is 45%. If the value is bigger than 35000, apply a tax of 30% by multiplying it by .30 and so on.  
+6. Print out the rent the user initially pays, the tax percentage, the tax value and print out the total of rent the user must pay.
+7. Use Return 0 to check if the program is running correctly.
 ### Tests
 One for each case:  
 a) +60000  
@@ -73,4 +73,30 @@ e) 1-9999
 <img alt="5" height="150" src="Imagenes/5Percent.png"/>
 </div>  
   
-# Practice 2
+<h1 align="center">
+Practice 2.- Benefits [Program for calculating a bonus based on an employee evaluation]
+</h4>
+
+### Preview Main Function
+> if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){  
+        if (calificacion == 0.0){  
+            cout << "Su calificacion es Inaceptable.";  
+        }  
+        else if (calificacion == 0.4){  
+            cout << "Su calificacion es Aceptable.";  
+        }     
+        else if (calificacion >= 0.6){  
+            cout << "Su calificacion es Meritoria.";  
+        }  
+        cout << "\nSu calificacion es de " << calificacion << " por lo que recibira un bono del " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";  
+    }  
+    else {  
+        cout << "\nSu calificacion es invalida para la evaluación.  \n";    
+    }    
+
+### Explanation
+1. Ask the user about their calification on a scale on 0 to 1 (Where 1 is 100%)
+2. Print out wheter the 
+3. 
+
+### Tests

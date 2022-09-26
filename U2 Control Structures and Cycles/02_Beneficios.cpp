@@ -30,13 +30,13 @@ int main(){
     cin >> calificacion;
     if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){
         if (calificacion == 0.0){
-        cout << "Su calificacion es Inaceptable.";
+            cout << "Su calificacion es Inaceptable.";
         }
         else if (calificacion == 0.4){
-        cout << "Su calificacion es Aceptable.";
+            cout << "Su calificacion es Aceptable.";
         }   
         else if (calificacion >= 0.6){
-        cout << "Su calificacion es Meritoria.";
+            cout << "Su calificacion es Meritoria.";
         }
         cout << "\nSu calificacion es de " << calificacion << " por lo que recibira un bono del " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";
     } 
