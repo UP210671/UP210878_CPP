@@ -12,9 +12,14 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 Practice 1.- Renta [Program for calculating taxes for an anual rent based on a value the user inputs]
 </h4>
 
-### Preview Main Function  
- ``` c++  cout << "Ingrese su renta anual:" << endl;  
+### Input
+```c++
+    cout << "Input your annual rent:" << endl;  
     cin >> Renta;  
+```
+
+### Main Function
+ ``` c++  
     if (Renta > 0 )  
     {  
         if (Renta >= 60000)  
@@ -39,7 +44,14 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
         } 
 ```
 
-
+### Output
+```c++
+        cout << endl << "Your annual rent is: $" << Renta << endl;//Rent value inputted
+        cout << "You have a tax of " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl; //Print out tax percentage followed by money value
+        cout << "The total amount to pay is: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
+        cout << "RENT      TAX(%)     TAX($)     TOTAL($)"<< endl;
+        cout << "$ " << Renta << "      " << (Impuesto/Renta)*100 << "% 
+```
 ### Explanation
 1. Ask the user to write their annual rent.
 2. The user types in their annual rent.
@@ -77,23 +89,31 @@ e) 1-9999
 Practice 2.- Benefits [Program for calculating a bonus based on an employee evaluation]
 </h4>
 
-### Preview Main Function
-``` c++ if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){  
-        if (calificacion == 0.0){  
-            cout << "Su calificacion es Inaceptable.";  
-        }  
-        else if (calificacion == 0.4){  
-            cout << "Su calificacion es Aceptable.";  
-        }     
-        else if (calificacion >= 0.6){  
-            cout << "Su calificacion es Meritoria.";  
-        }  
-        cout << "\nSu calificacion es de " << calificacion << " por lo que recibira un bono del " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";  
-    }  
-    else {  
-        cout << "\nSu calificacion es invalida para la evaluación.  \n";    
-    }    
+### Input
+```c++
+    cout << "Input the employee qualification\n";
+    cin >> calificacion;
 ```
+
+### Main Function
+``` c++
+    if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){//Multiple If conditions, the number must be 0,0.4 or greater than 0.6 and being lower than 1.
+        if (calificacion == 0.0){//Print out evaluation level of the employee
+            cout << "An Unacceptable employee.";
+        }
+        else if (calificacion == 0.4){
+            cout << "An Acceptable employee.";
+        }   
+        else if (calificacion >= 0.6){
+            cout << "A Meritorous employee.";
+        }
+```
+
+### Output
+```c++
+        cout << "\nWith an evaluation of " << calificacion << " , the employee will receive " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";//Print out percentage and value of the bonus
+```
+
 ### Explanation
 1. Ask the user about their qualification on a scale on 0 to 1 (Where 1 is 100% and 0 is 0%)
 2. If the user types a value other than 0, 0.4 or a number bigger than 0.6, the program does not run and it says that the qualification is invalid.

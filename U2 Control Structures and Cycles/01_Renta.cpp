@@ -3,7 +3,7 @@ Date: 22/09/2022
 Author: Vinc3nt (Figured its better than using an ID)
 Email: UP210878@alumnos.upa.edu.mx
 Description: Rent discounts.
-Last Modification: 26/09/2022
+Last Modification: 28/09/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -57,15 +57,15 @@ int main(){
             Impuesto = Renta*.05;
         }
         //Print out everything
-        cout << endl << "Your annual rent : $" << Renta << endl;//Rent value inputted
-        cout << "Con un impuesto del " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl; //Print out tax percentage followed by money value
-        cout << "Usted tiene que pagar un total de: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
-        cout << "RENTA      IMPUESTO(%)     IMPUESTO($)     TOTAL($)"<< endl;
+        cout << endl << "Your annual rent is: $" << Renta << endl;//Rent value inputted
+        cout << "You have a tax of " << (Impuesto/Renta)*100 << "%: $" << Impuesto << endl; //Print out tax percentage followed by money value
+        cout << "The total amount to pay is: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
+        cout << "RENT      TAX(%)     TAX($)     TOTAL($)"<< endl;
         cout << "$ " << Renta << "      " << (Impuesto/Renta)*100 << "%             $ " << Impuesto << "         $ " << Renta + Impuesto << endl;
     }
     else 
     {
-        cout << "El dato que usted ingreso es incorrecto :( ; porfavor, intentelo de nuevo" << endl;//In case the value is not valid; ask the user to try again.
+        cout << "You've inputted an invalid value :( ; try again please" << endl;//In case the value is not valid; ask the user to try again.
     }
     return 0;
 }
