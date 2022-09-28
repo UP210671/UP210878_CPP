@@ -51,6 +51,7 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
         cout << "The total amount to pay is: $" << Renta + Impuesto << endl << "\nVisualización en tabla:\n"; //Table visualization (Alternative view)
         cout << "RENT      TAX(%)     TAX($)     TOTAL($)"<< endl;
         cout << "$ " << Renta << "      " << (Impuesto/Renta)*100 << "% 
+    }
 ```
 ### Explanation
 1. Ask the user to write their annual rent.
@@ -112,6 +113,10 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
 ### Output
 ```c++
         cout << "\nWith an evaluation of " << calificacion << " , the employee will receive " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";//Print out percentage and value of the bonus
+    } 
+    else {
+        cout << "\nThe value you inputted is invalid, try again.\n";//In case the number is invalid
+    }
 ```
 
 ### Explanation
@@ -146,5 +151,5 @@ d) Invalid
 </div> 
 
 <h1 align="center">
-Practice 3.-
+Practice 3.- Game center prices by age
 </h4>

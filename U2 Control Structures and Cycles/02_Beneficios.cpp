@@ -12,7 +12,7 @@ Last Modification: 28/09/2022
 
 using namespace std;
 
-//---------------------- ISSUE -------------------------
+//---------------------- ISSUE (IN SPANISH) -------------------------
 
 /*
 En una determinada empresa, sus empleados son evaluados al final de cada año. 
