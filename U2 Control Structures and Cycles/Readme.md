@@ -13,7 +13,7 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
 </h4>
 
 ### Preview Main Function  
- >  cout << "Ingrese su renta anual:" << endl;  
+ ``` c++  cout << "Ingrese su renta anual:" << endl;  
     cin >> Renta;  
     if (Renta > 0 )  
     {  
@@ -37,7 +37,7 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
         {  
             Impuesto = Renta*.05;  
         } 
-
+```
 
 
 ### Explanation
@@ -78,7 +78,7 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
 </h4>
 
 ### Preview Main Function
-> if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){  
+``` c++ if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){  
         if (calificacion == 0.0){  
             cout << "Su calificacion es Inaceptable.";  
         }  
@@ -93,7 +93,7 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
     else {  
         cout << "\nSu calificacion es invalida para la evaluación.  \n";    
     }    
-
+```
 ### Explanation
 1. Ask the user about their qualification on a scale on 0 to 1 (Where 1 is 100% and 0 is 0%)
 2. If the user types a value other than 0, 0.4 or a number bigger than 0.6, the program does not run and it says that the qualification is invalid.
