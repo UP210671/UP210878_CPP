@@ -1,9 +1,9 @@
 /*
-Date: 28/09/2022 
+Date: 28/09/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Game store prices.
-Last Modification: 28/09/2022
+Last Modification: 29/09/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -28,29 +28,36 @@ ingredientes que lleva.
 
 //------------------ MAIN FUNCTION ---------------------
 
-int main(){
-    int ingredient=0,index=-1;
-    string extraingredient[5]={"Pepper","Tofu","Pepperoni","Ham","Salmon"};
-    char response;
+int main()
+{
+    int ingredient = 0, index = -1;//"Index is -1 so that if the user types 1, the actual value selected is in position 0 and so on"
+    string extraingredient[5] = {"Pepper", "Tofu", "Pepperoni", "Ham", "Salmon"};//Extra ingredient selection list declared from position 0 to 4
+    char response;//Vegetarian or not response
     cout << "Welcome customer to Bella Napoli Pizzeria!\nAll our pizzas have mozzarella and tomato\nWould you like a vegetarian pizza? (Y/N)\n";
     cin >> response;
-    if (response == 'Y' || response == 'N'){
-        if (response == 'Y'){
-            do{
+    if (response == 'Y' || response == 'N' || response == 'y' || response == 'n')//Check if the user typed in a valid response
+    {
+        if (response == 'Y' || response == 'y')//Vegetarian options
+        {
+            do
+            {
                 cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
                 cin >> ingredient;
-            } while (ingredient >= 0 && ingredient > 2);
+            } while (ingredient < 1 || ingredient > 2);
         }
-        else if (response == 'N'){
-            do{
-            cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
-            cin >> ingredient;
-            } while (ingredient >= 0 && ingredient > 3);
-            index=1;
+        else if (response == 'N' || response == 'n')//Non-vegetarian options
+        {
+            do
+            {
+                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
+                cin >> ingredient;
+            } while (ingredient < 1 || ingredient > 3);
+            index = 1;//Locate the ingredient on the "meat section"
         }
-        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient+index] << endl;
+        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
     }
-    else{
+    else
+    {
         cout << "You've inputted an invalid response, try again\n";
     }
     return 0;
