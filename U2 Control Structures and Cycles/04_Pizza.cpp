@@ -29,28 +29,29 @@ ingredientes que lleva.
 //------------------ MAIN FUNCTION ---------------------
 
 int main(){
-    int ingredient;
+    int ingredient=0,index=-1;
+    string extraingredient[5]={"Pepper","Tofu","Pepperoni","Ham","Salmon"};
     char response;
     cout << "Welcome customer to Bella Napoli Pizzeria!\nAll our pizzas have mozzarella and tomato\nWould you like a vegetarian pizza? (Y/N)\n";
     cin >> response;
     if (response == 'Y' || response == 'N'){
         if (response == 'Y'){
-            cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
-            cin >> ingredient;
-            if (ingredient == 1){
-                cout << "Your pizza has the following ingredients:\n Pepper \n Mozarella \n Tomato\n";
-            }
-            if (ingredient == 2){
-                cout << "Your pizza has the following ingredients:\n Pepper \n Mozarella \n Tomato\n";
-            }
+            do{
+                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
+                cin >> ingredient;
+            } while (ingredient >= 0 && ingredient > 2);
         }
         else if (response == 'N'){
+            do{
             cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
             cin >> ingredient;
+            } while (ingredient >= 0 && ingredient > 3);
+            index=1;
         }
+        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient+index] << endl;
     }
     else{
-        cout << "You've inputted an invalid response, try again";
+        cout << "You've inputted an invalid response, try again\n";
     }
     return 0;
 }
