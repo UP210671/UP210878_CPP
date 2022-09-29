@@ -18,7 +18,7 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
     cin >> Renta;  
 ```
 
-### Main Function
+### Process
  ``` c++  
     if (Renta > 0 )  
     {  
@@ -54,6 +54,14 @@ Practice 1.- Renta [Program for calculating taxes for an anual rent based on a v
     }
 ```
 ### Explanation
+This program is about applying a tax to an annual rent based on the rent value:  
+RENT VALUE | TAX(%)  
+60000 | 45%  
+35000 | 30%  
+20000 | 20%  
+10000 | 15%  
++0    | 5%  
+The program works this way:  
 1. Ask the user to write their annual rent.
 2. The user types in their annual rent.
 3. Through the use of _if_ , verify that the user typed in a valid number in the rent.
@@ -96,7 +104,7 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
     cin >> calificacion;
 ```
 
-### Main Function
+### Process
 ``` c++
     if ((calificacion == 0.0) || (calificacion == 0.4) || (calificacion >= 0.6) && calificacion<=1){//Multiple If conditions, the number must be 0,0.4 or greater than 0.6 and being lower than 1.
         if (calificacion == 0.0){//Print out evaluation level of the employee
@@ -120,6 +128,8 @@ Practice 2.- Benefits [Program for calculating a bonus based on an employee eval
 ```
 
 ### Explanation
+Employees are rated based on their work perfomance; this program is about giving the employees their deserved bonus based on their performance on different scalings; however, the rating must be 0.0, 0.4 or greater than 0.6, any other value is invalid. The bonus is a percentage equal to their performance where 100% percent is $2400 and 0% is $0.
+The program works this way:  
 1. Ask the user about their qualification on a scale on 0 to 1 (Where 1 is 100% and 0 is 0%)
 2. If the user types a value other than 0, 0.4 or a number bigger than 0.6, the program does not run and it says that the qualification is invalid.
 3. If the user types in a valid value, print out what level the employee has followed up by the bonus percentage and value.
@@ -150,6 +160,105 @@ d) Invalid
 <img alt="invalid" height="150" src="Imagenes/invalid.PNG"/>
 </div> 
 
+
 <h1 align="center">
-Practice 3.- Game center prices by age
+Practice 3.- Game center customer price
 </h4>
+
+### Input
+```c++
+    cout << "Customer age: \n";//Ask for the customer age
+    cin >> age;
+```
+
+### Process
+```c++
+    if (age >= 0){
+        if (age >= 0 && age <4){
+            price = 0;
+        }
+        else if (age >= 4 && age <= 18){
+            price = 5;
+        }
+        else if (age > 18){
+            price = 10;
+        }
+```
+
+### Output
+```c++
+        cout << "\nCustomer Age: " << age << "\nPrice to pay: $" << price << endl;//Output customer age and price to pay
+    }
+    else {
+        cout << "\nThe age you've inputted is invalid, try again.\n";//In case the age value is invalid
+    }
+```
+### Explanation
+The program is about pricing the entrance for the customer at a game center base on their age:  
++0 years | FREE ENTRANCE  
+4-18 years | $5  
++18 years | $10  
+It works the following way:  
+1. Ask the for the customer age
+2. Based on the inputted value, declare a value for the price
+3. Print out the customer data and price to pay  
+3.1. If the user typed in an invalid response, print out a error message.
+4. Return 0 to check that the program ran succesfully.  
+
+### Tests
+
+
+<h1 align="center">
+Practice 4.- Vegetarian pizza ingredient selection
+</h4>
+
+### Input
+```c++
+    cout << "Welcome customer to Bella Napoli Pizzeria!\nAll our pizzas have mozzarella and tomato\nWould you like a vegetarian pizza? (Y/N)\n";
+    cin >> response;
+```
+### Process
+```c++
+    if (response == 'Y' || response == 'N' || response == 'y' || response == 'n')//Check if the user typed in a valid response
+    {
+        if (response == 'Y' || response == 'y')//Vegetarian options
+        {
+            do
+            {
+                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
+                cin >> ingredient;
+            } while (ingredient < 1 || ingredient > 2);
+        }
+        else if (response == 'N' || response == 'n')//Non-vegetarian options
+        {
+            do
+            {
+                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
+                cin >> ingredient;
+            } while (ingredient < 1 || ingredient > 3);
+            index = 1;//Locate the ingredient on the "meat section"
+        }
+```
+
+### Output
+```c++
+        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
+    }
+    else
+    {
+        cout << "You've inputted an invalid response, try again\n";
+    }
+```
+
+### Explanation
+The program asks the user if they'd like a vegetarian pizza at Bella Napoli. Every pizza has the same base ingredients: Mozarrela and Tomate, but an extra ingredient based on if its a vegetarian pizza or not. The extra ingredients are the following :  
+Tofu and Pepper (Vegetarian), Pepperoni, Ham or Salmon (Non-vegetarian).  
+The program works the following way:  
+1. Declare a list of extra ingredients.
+2. Ask the user if they would like a vegetarian pizza or not.  
+2.1. If the user inputs an invalid response, exit the program.
+3. If they chose vegetarian, show a list of the possible extra ingredients and let the user input a number to choose.
+4. If they chose non-vegetarian, move the declared list of extra ingredients to the "meat section" and let the user input a number to choose the extra ingredient.
+5. Print out the selection of extra ingredients with the default ingredients (Mozarrella and Tomato)
+6. Return 0 to check that the program ran succesfully.
+### Tests
