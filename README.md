@@ -8,10 +8,9 @@
 <h2 align="center"> 
 Hope you enjoy.
 
-##
 
 
-This course will be divided in four Units:  
+## This course will be divided in four Units:  
 [U1 Programming Introduction](https://github.com/UP210878/UP210878_CPP/tree/main/U1%20Programming%20Introduction)  
 [U2 Control Structures and Cycles](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles)  
 [U3 Functions](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions)  

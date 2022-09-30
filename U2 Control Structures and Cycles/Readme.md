@@ -102,6 +102,10 @@ e) 1-9999
 <img alt="5" height="150" src="Imagenes/5Percent.png"/>
 </div>  
 
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
 <br /><br /><br /><br /><br />
 <h1 align="center">
 <img alt="Exercise2" height="30" src="Imagenes/exercise2.png"/>Exercise 2.- Benefits [Program for calculating a bonus based on an employee evaluation]
@@ -169,6 +173,10 @@ d) Invalid
 <img alt="invalid" height="100" src="Imagenes/invalid.PNG"/>
 </div> 
 
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
 <br /><br /><br /><br /><br />
 <h1 align="center">
 <img alt="Exercise3" height="45" src="Imagenes/exercise3.gif"/>Exercise 3.- Game center customer price
@@ -215,6 +223,11 @@ It works the following way:
 4. Return 0 to check that the program ran succesfully.  
 
 ### Tests
+
+
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
@@ -271,3 +284,8 @@ The program works the following way:
 5. Print out the selection of extra ingredients with the default ingredients (Mozarrella and Tomato)
 6. Return 0 to check that the program ran succesfully.
 ### Tests
+
+
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
