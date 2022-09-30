@@ -7,9 +7,15 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 <div align ="center">
 <img alt="Credits:DeeKay" height="300" src="Imagenes/cover.gif"/>
 </div> 
-Index:  
+<br />
 
-<br /><br /><br />
+## Index:  
+
+- [Exercise 1](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-1--annual-rent-program-for-calculating-taxes-for-an-anual-rent-based-on-a-value-the-user-inputs)  
+- [Exercise 2](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-1--annual-rent-program-for-calculating-taxes-for-an-anual-rent-based-on-a-value-the-user-inputs)  
+- [Exercise 3](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-1--annual-rent-program-for-calculating-taxes-for-an-anual-rent-based-on-a-value-the-user-inputs)  
+- [Exercise 4](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-1--annual-rent-program-for-calculating-taxes-for-an-anual-rent-based-on-a-value-the-user-inputs)  
+<br />
 <h1 align="center">
 <img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/> Exercise 1.- Annual Rent [Program for calculating taxes for an anual rent based on a value the user inputs]
 </h1>
