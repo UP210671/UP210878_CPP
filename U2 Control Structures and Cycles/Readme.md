@@ -3,14 +3,16 @@ WELCOME TO UNIT 2: CONTROL STRUCTURES AND CYCLES
 
 ### This unit is about control structures and cycles.
 This unit is about cycles and control structures (i.e: if, if else, for...). During this unit we actually had to make use of our creativity and brain to solve problems (Unlike previous unit which really was just an introduction to programming and using github). Hope you enjoy.
+<br /><br />
+<div align ="center">
+<img alt="Credits:DeeKay" height="300" src="Imagenes/cover.gif"/>
+</div> 
+Index:  
 
-<p align="center">
-    <img src="https://mozwebdev.in/wp-content/uploads/2021/11/software-development.png">
-
-
+<br /><br /><br />
 <h1 align="center">
-Practice 1.- Renta [Program for calculating taxes for an anual rent based on a value the user inputs]
-</h4>
+<img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/> Exercise 1.- Annual Rent [Program for calculating taxes for an anual rent based on a value the user inputs]
+</h1>
 
 ### Input
 ```c++
@@ -93,9 +95,10 @@ e) 1-9999
 <div align ="center">
 <img alt="5" height="150" src="Imagenes/5Percent.png"/>
 </div>  
-  
+
+<br /><br /><br /><br /><br />
 <h1 align="center">
-Practice 2.- Benefits [Program for calculating a bonus based on an employee evaluation]
+<img alt="Exercise2" height="30" src="Imagenes/exercise2.png"/>Exercise 2.- Benefits [Program for calculating a bonus based on an employee evaluation]
 </h4>
 
 ### Input
@@ -160,9 +163,9 @@ d) Invalid
 <img alt="invalid" height="100" src="Imagenes/invalid.PNG"/>
 </div> 
 
-
+<br /><br /><br /><br /><br />
 <h1 align="center">
-Practice 3.- Game center customer price
+<img alt="Exercise3" height="45" src="Imagenes/exercise3.gif"/>Exercise 3.- Game center customer price
 </h4>
 
 ### Input
@@ -207,9 +210,9 @@ It works the following way:
 
 ### Tests
 
-
+<br /><br /><br /><br /><br />
 <h1 align="center">
-Practice 4.- Vegetarian pizza ingredient selection
+<img alt="Exercise1" height="30" src="Imagenes/exercise4.gif"/>Exercise 4.- Vegetarian pizza ingredient selection
 </h4>
 
 ### Input

@@ -3,7 +3,7 @@ Date: 28/09/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Game store prices.
-Last Modification: 29/09/2022
+Last Modification: 30/09/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
