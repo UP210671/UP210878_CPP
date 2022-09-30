@@ -139,25 +139,25 @@ The program works this way:
 a) Unacceptable
 
 <div align ="center">
-<img alt="unacceptable" height="150" src="Imagenes/unacceptable.png"/>
+<img alt="unacceptable" height="100" src="Imagenes/unacceptable.png"/>
 </div> 
 
 b) Acceptable
 
 <div align ="center">
-<img alt="acceptable" height="150" src="Imagenes/acceptable.png"/>
+<img alt="acceptable" height="100" src="Imagenes/acceptable.png"/>
 </div> 
 
 c) Meritorious
 
 <div align ="center">
-<img alt="meritorious" height="150" src="Imagenes/merit.PNG"/>
+<img alt="meritorious" height="100" src="Imagenes/merit.PNG"/>
 </div> 
 
 d) Invalid
 
 <div align ="center">
-<img alt="invalid" height="150" src="Imagenes/invalid.PNG"/>
+<img alt="invalid" height="100" src="Imagenes/invalid.PNG"/>
 </div> 
 
 

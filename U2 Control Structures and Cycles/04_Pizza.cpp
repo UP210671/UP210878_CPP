@@ -41,7 +41,7 @@ int main()
         {
             do
             {
-                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
+                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";//Loop the ingredient selection until a valid response (vegetarian)
                 cin >> ingredient;
             } while (ingredient < 1 || ingredient > 2);
         }
@@ -49,7 +49,7 @@ int main()
         {
             do
             {
-                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
+                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";//Loop the ingredient selection (meat)
                 cin >> ingredient;
             } while (ingredient < 1 || ingredient > 3);
             index = 1;//Locate the ingredient on the "meat section"

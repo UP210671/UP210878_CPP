@@ -21,22 +21,23 @@ This unit will be divided in four Units:
 <img alt="c++" height="200" src="Imagenes/velita.gif"/>
 </div>    
 
-# Console Commands
+# Terminal Commands
 ## General Commands  
 cd - change directory  
 ls - scan files  
 nano - modify file  
 
 ## Git Commands
-git clone - download a folder
-git pull - update current git folder on the desktop
-git status - check changes that have been made
+git clone - download a folder  
+git pull - update current git folder on the desktop  
+git status - check changes that have been made  
 ### STEPS TO UPLOAD A FILE:  
->git add  
+git add  
 git commit -m " "  
 git push  
 
+>NOTE: ALWAYS use git pull before doing anything
 
-# I don't have linux yet, neither do I possess a laptop. Let's see how far windows can take us.
 
-![RelevantImage](https://www.emaratalyoum.com/polopoly_fs/1.1410304.1602783749!/image/image.jpg)
+# Quick update, I now have a laptop.
+![RelevantImage](https://img.freepik.com/premium-vector/continuous-line-drawing-happy-man-gesturing-looking-laptop-computer-isolated_500861-744.jpg)
