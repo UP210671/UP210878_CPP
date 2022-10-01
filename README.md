@@ -1,4 +1,4 @@
-# <img alt="c++" height="20" src="Imagenes/portada.gif"/> Welcome to V1nc3nt Repository :D.
+# <img alt="c++" height="30" src="Imagenes/portada.gif"/> Welcome to V1nc3nt Repository :D.
 ### Here's my report of my learning during my **programming course**.  
 
 
