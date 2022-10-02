@@ -17,7 +17,8 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 - [Exercise 4](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-4--vegetarian-pizza-ingredient-selection)  
 <br />
 <h1 align="center">
-<img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/> Exercise 1.- Annual Rent [Program for calculating taxes for an anual rent based on a value the user inputs]
+    <img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/>
+ Exercise 1.- Annual Rent [Program for calculating taxes for an anual rent based on a value the user inputs]
 </h1>
 
 ### Input
@@ -81,23 +82,27 @@ The program works this way:
 7. Use Return 0 to check if the program is running correctly.
 ### Tests
 One for each case:  
-a) +60000  
+**a)** +60000  
 <div align ="center">
 <img alt="45" height="150" src="Imagenes/45percent.png"/>
 </div>  
-b) 35000-59999  
+
+**b)** 35000-59999  
 <div align ="center">
 <img alt="30" height="150" src="Imagenes/30percent.png"/>
-</div>  
-c) 20000-34999  
+</div> 
+
+**c)** 20000-34999  
 <div align ="center">
 <img alt="20" height="150" src="Imagenes/20percent.png"/>
-</div>  
-d) 10000-1999  
+</div>
+
+**d)** 10000-1999  
 <div align ="center">
 <img alt="15" height="150" src="Imagenes/15percent.png"/>
-</div>  
-e) 1-9999  
+</div>
+
+**e)** 1-9999  
 <div align ="center">
 <img alt="5" height="150" src="Imagenes/5Percent.png"/>
 </div>  
@@ -149,25 +154,25 @@ The program works this way:
 4. Return 0 to check that the program is executing correctly.
 
 ### Tests
-a) Unacceptable
+**a)** Unacceptable
 
 <div align ="center">
 <img alt="unacceptable" height="100" src="Imagenes/unacceptable.png"/>
 </div> 
 
-b) Acceptable
+**b)** Acceptable
 
 <div align ="center">
 <img alt="acceptable" height="100" src="Imagenes/acceptable.png"/>
 </div> 
 
-c) Meritorious
+**c)** Meritorious
 
 <div align ="center">
 <img alt="meritorious" height="100" src="Imagenes/merit.PNG"/>
 </div> 
 
-d) Invalid
+**d)** Invalid
 
 <div align ="center">
 <img alt="invalid" height="100" src="Imagenes/invalid.PNG"/>
@@ -223,15 +228,32 @@ It works the following way:
 4. Return 0 to check that the program ran succesfully.  
 
 ### Tests
+**a)** <3  
+<div align ="center">
+<img alt="age0" height="120" src="Imagenes/0age.PNG"/>
+</div> 
 
+**b)** 4-18  
+<div align ="center">
+<img alt="age4-18" height="120" src="Imagenes/4age.PNG"/>
+</div> 
 
+**c)** +18  
+<div align ="center">
+<img alt="age+18" height="120" src="Imagenes/18age.PNG"/>
+</div> 
+
+**d)** Invalid response  
+<div align ="center">
+<img alt="noage" height="100" src="Imagenes/notage.PNG"/>
+</div> 
 <br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise1" height="30" src="Imagenes/exercise4.gif"/>Exercise 4.- Vegetarian pizza ingredient selection
+<img alt="Exercise4" height="30" src="Imagenes/exercise4.gif"/>Exercise 4.- Vegetarian pizza ingredient selection
 </h4>
 
 ### Input
@@ -247,7 +269,7 @@ It works the following way:
         {
             do
             {
-                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";
+                cout << "Select an ingredient: \n 1. Pepper\n 2. Tofu\n";//Loop the ingredient selection until a valid response (vegetarian)
                 cin >> ingredient;
             } while (ingredient < 1 || ingredient > 2);
         }
@@ -255,16 +277,17 @@ It works the following way:
         {
             do
             {
-                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";
+                cout << "Select an ingredient: \n 1. Pepperoni\n 2. Ham\n 3. Salmon\n";//Loop the ingredient selection (meat)
                 cin >> ingredient;
             } while (ingredient < 1 || ingredient > 3);
             index = 1;//Locate the ingredient on the "meat section"
+            selector = 1;//Display a nonvegetarian pizza type
         }
 ```
 
 ### Output
 ```c++
-        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
+        cout << "Your " << pizzatype[selector] << " pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
     }
     else
     {
@@ -283,9 +306,32 @@ The program works the following way:
 4. If they chose non-vegetarian, move the declared list of extra ingredients to the "meat section" and let the user input a number to choose the extra ingredient.
 5. Print out the selection of extra ingredients with the default ingredients (Mozarrella and Tomato)
 6. Return 0 to check that the program ran succesfully.
-### Tests
+### Tests <br /><br />
+#### Vegetarian Pizzas 
+<div align ="center">
+<img alt="age0" height="200" src="Imagenes/pizzapepper.PNG"/>
+<img alt="age0" height="200" src="Imagenes/pizzatofu.PNG"/>
+</div> 
+<br /><br />
 
+#### Non-Vegetarian Pizzas
+<div align ="center">
+<img alt="age0" height="200" src="Imagenes/pizzapepperoni.PNG"/>
+<img alt="age0" height="200" src="Imagenes/pizzaham.PNG"/>
+<img alt="age0" height="200" src="Imagenes/pizzasalmon.PNG"/>
+</div> 
+<br />
 
+#### Invalid Response
+<div align ="center">
+<img alt="age0" height="100" src="Imagenes/pizzaerror1.PNG"/>
+</div> 
+<br />
+
+#### Invalid Extra ingredient loop  
+<div align ="center">
+<img alt="age0" height="400" src="Imagenes/pizzaerror2.PNG"/>
+</div> 
 <br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)

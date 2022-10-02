@@ -3,7 +3,7 @@ Date: 28/09/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Game store prices.
-Last Modification: 30/09/2022
+Last Modification: 2/09/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -30,8 +30,9 @@ ingredientes que lleva.
 
 int main()
 {
-    int ingredient = 0, index = -1;//"Index is -1 so that if the user types 1, the actual value selected is in position 0 and so on"
+    int ingredient = 0, index = -1, selector = 0;//Index is -1 so that if the user types 1, the actual value selected is in position 0 and so on and pizza type selector
     string extraingredient[5] = {"Pepper", "Tofu", "Pepperoni", "Ham", "Salmon"};//Extra ingredient selection list declared from position 0 to 4
+    string pizzatype[2]={"Vegetarian", "Non-vegetarian"};//List of types of pizza to print out
     char response;//Vegetarian or not response
     cout << "Welcome customer to Bella Napoli Pizzeria!\nAll our pizzas have mozzarella and tomato\nWould you like a vegetarian pizza? (Y/N)\n";
     cin >> response;
@@ -53,8 +54,9 @@ int main()
                 cin >> ingredient;
             } while (ingredient < 1 || ingredient > 3);
             index = 1;//Locate the ingredient on the "meat section"
+            selector = 1;//Display a nonvegetarian pizza type
         }
-        cout << "Your pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
+        cout << "Your " << pizzatype[selector] << " pizza has the following ingredients:\n Mozarella \n Tomato\n " << extraingredient[ingredient + index] << endl;//Print out all the ingredients and print out the extra ingredient based on the value inputted by the user
     }
     else
     {
