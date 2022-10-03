@@ -2,8 +2,8 @@
 Date: 28/09/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
-Description: Game store prices.
-Last Modification: 2/09/2022
+Description: Pizza type.
+Last Modification: 3/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
