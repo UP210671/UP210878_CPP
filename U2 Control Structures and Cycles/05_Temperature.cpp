@@ -12,7 +12,7 @@ Last Modification: 3/10/2022
 using namespace std;
 
 //---------------------ISSUE---------------------------
-/*Make a program that allows 6 entries and outputs the mean, lowest and highest value*/
+/*Make a program that allows 6 entries and outputs the average, lowest and highest value*/
 
 //------------------ MAIN FUNCTION ---------------------
 
@@ -24,8 +24,6 @@ int main()
     {
         cout << "Give me the temperature: ";
         cin >> temperature;
-        summatorytemperature += temperature;
-        contador++;
         if (temperature >= maxtemperature)
         {
             maxtemperature = temperature;
@@ -34,6 +32,8 @@ int main()
         {
             mintemperature = temperature;
         }
+        summatorytemperature += temperature;
+        contador++;
     } while (contador <= 6);
     average = summatorytemperature / 6;
     cout << "The average of all the temperatures is " << average << " C° \nThe lowest temperature is " << mintemperature << " C° \nThe highest temperature is " << maxtemperature << " C° \n";
