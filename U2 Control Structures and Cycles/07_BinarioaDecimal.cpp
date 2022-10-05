@@ -19,13 +19,19 @@ using namespace std;
 //------------------ MAIN FUNCTION ---------------------
 
 int main(){
-    int binary,decimal,contador=0;
+    int binary,decimal=0,contador=0;
+    cout << "Input a binary number: \n";
     do
     {
         cin >> binary;
-        decimal += ((binary)*(pow(2,contador)));
+        if (binary < 0 || binary > 1)
+        {
+            cout << "\nExiting program\n";
+            break;
+        }
+        decimal += binary*(pow(2,contador));
         contador++;
     } while (binary == 1 || binary == 0);
-    cout << "\nThe value in decimal: "<< decimal;
+    cout << "\nThe value in decimal: "<< decimal << "\n\n";
     return 0;
 }
