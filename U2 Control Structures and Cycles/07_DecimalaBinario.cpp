@@ -3,7 +3,7 @@ Date: 5/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Make a program that makes a Decimal number into a binary number.
-Last Modification: 5/10/2022
+Last Modification: 10/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -31,25 +31,25 @@ int main()
             {
                 if (num % 2 == 0)
                 {
-                    binary = '0' + binary;
+                    binary = '0' + binary;//String array so that the binary number appears in correct order
                 }
                 else
                 {
-                    binary = '1' + binary;
+                    binary = '1' + binary;//String array so that the binary appears in the correct order
                 }
                 num /= 2;
             }
-            cout << "The number you've inputted is " << binary;
+            cout << "The number you've inputted is " << binary;//Output of the string
             cout << endl;
         }
         else if (num == 0)
         {
-            cout << "You've inputted a 0\n";
+            cout << "You've inputted a 0\n";//In case the user inputs a 0
         }
         else
         {
-            cout << "The numer must be greater than 0\n";
+            cout << "The number must be greater than 0\n";
         }
-    } while (num < 0);
+    } while (num < 0);//Loop until the value is valid (greater than 0)
     return 0;
 }

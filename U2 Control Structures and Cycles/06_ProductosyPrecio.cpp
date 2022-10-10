@@ -3,7 +3,7 @@ Date: 5/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Show a sum of products.
-Last Modification: 5/10/2022
+Last Modification: 10/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -24,22 +24,24 @@ int main()
     do
     {
         cout << "Product " << numproducto << "\nAmount: ";
-        cin >> amount;
-        if (amount <= 0)
+        cin >> amount;//Amount of products
+        if (amount <= 0)//In case the product number is invalid, exit the loop
         {
             cout << "\n------Invalid amount, exiting program-----\n";
+            numproducto++;
             break;
         }
         cout << "Price: ";
-        cin >> price;
+        cin >> price;//Price input
         if (price < 0)
         {
-            cout << "\n------Invalid amount, exiting program-----\n";
+            cout << "\n------Invalid amount, exiting program-----\n";//In case the price is invalid, exit the loop before doing the sum
+            numproducto++;
             break;
         }
         numproducto++;
-        total += (price * amount);
-    } while (price != 0);
+        total += (price * amount);//Calculate total value, repeat the loop
+    } while (price != 0);//Keep repeating until the price inputed equals 0
     cout << "\nYou've inputted a total of " << numproducto - 2 << " different products. ";
     cout << "\nYour total is: " << total << "$ \n\n";
     return 0;

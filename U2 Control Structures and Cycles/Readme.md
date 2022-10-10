@@ -335,3 +335,192 @@ The program works the following way:
 <br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
+<h1 align="center">
+<img alt="Exercise5" height="30" src="Imagenes/exercise5.gif"/>Exercise 5.- Average temperature, maxium and minium value
+</h4>
+
+### Input
+```c++
+    do
+    {
+        cout << "Give me the temperature: ";
+        cin >> temperature;
+```
+### Process
+```c++
+        if (temperature >= maxtemperature)
+        {
+            maxtemperature = temperature;
+        }
+        if (temperature <= mintemperature)
+        {
+            mintemperature = temperature;
+        }
+        summatorytemperature += temperature;
+        contador++;
+    } while (contador <= 6);
+    average = summatorytemperature / 6;
+```
+### Output
+```c++
+    cout << "The average of all the temperatures is " << average << " C° \nThe lowest temperature is " << mintemperature << " C° \nThe highest temperature is " << maxtemperature << " C° \n";
+
+```
+### Explanation
+The program is about calculating 6 inputs of a temperature value. Each input gains a new etiquette, either max temperature or minium temperature using the previous value as reference. Because of this the default max and minium values use very extreme numbers in order for the first value to aquire the maxium and minium etiquette and keep comparing the following numbers to that initial value.
+1. Ask for user input about current temperature 6 times. The value can be a float value.
+2. Assign the inputted value as maxium temperature or minium temperature comparing it to the previous value inputted by the user.
+3. Calculate the average of the values inputted by the user.
+4. Output the average, minium and maxium value of the 6 inputs.
+5. Return 0 to check that the program ran correctly.
+
+### Tests <br /><br />
+#### Temperatures
+<div align ="center">
+<img alt="temperaturestest" height="100" src="Imagenes/temperaturestest.png"/>
+</div> 
+<br /><br />
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
+<h1 align="center">
+<img alt="Exercise6" height="30" src="Imagenes/exercise6.gif"/>Exercise 6.- Products selling totals
+</h4>
+
+### Input
+```c++
+    do
+    {
+        cout << "Product " << numproducto << "\nAmount: ";
+        cin >> amount;
+```
+### Process
+```c++
+        if (amount <= 0)
+        {
+            cout << "\n------Invalid amount, exiting program-----\n";
+            numproducto--;
+            break;
+        }
+        cout << "Price: ";
+        cin >> price;
+        if (price < 0)
+        {
+            cout << "\n------Invalid amount, exiting program-----\n";
+            numproducto--;
+            break;
+        }
+        numproducto++;
+        total += (price * amount);
+    } while (price != 0);
+```
+### Output
+```c++
+    cout << "\nYou've inputted a total of " << numproducto - 2 << " different products. ";
+    cout << "\nYour total is: " << total << "$ \n\n";
+```
+### Explanation
+This program is used to calculate the selling profits of a user. The user inputs and indefinite number of products, the amount that was selled of each product and the price the product was sold at individually. To exit the program the user must input a price of 0. The program also exits when the user writes an invalid product number (0  or less) or an invalid price value (less than 0).
+1. Ask the user to write the amount sold of Product X (where X is the times the user has inputted a value)
+2. Ask the user to write the price that each individual piece of Product X was sold
+3. If the user writes a 0 in the price value, exit the program
+4. If the user writes 0 or less in the price or amount value, exit the program
+5. Print out the number of products that were inputted
+6. Print out the total sum of money profitted.
+7. Return 0 to check that the program ran correctly.
+### Tests <br /><br />
+#### Valid run
+<div align ="center">
+<img alt="validproduct" height="100" src="Imagenes/exercise6_1.png"/>
+</div> 
+<br /><br />
+
+#### Invalid run (invalid product numbers)
+<div align ="center">
+<img alt="invalidproduct" height="100" src="Imagenes/exercise6_2.png"/>
+</div> 
+<br /><br />
+
+#### Invalid run (Invalid price numbers)
+<div align ="center">
+<img alt="invalid price" height="100" src="Imagenes/exercise6_3.png"/>
+</div> 
+<br /><br />
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
+<h1 align="center">
+<img alt="Exercise7" height="30" src="Imagenes/exercise7.gif"/>Exercise 7.- Decimal number to binary value
+</h4>
+
+### Input
+```c++
+    do
+    {
+        cout << "Input a decimal number \n";
+        cin >> num;
+```
+### Process
+```c++
+        if (num > 0)
+        {
+            while (num > 0)
+            {
+                if (num % 2 == 0)
+                {
+                    binary = '0' + binary;
+                }
+                else
+                {
+                    binary = '1' + binary;
+                }
+                num /= 2;
+            }
+```
+### Output
+```c++
+            cout << "The number you've inputted is " << binary;
+            cout << endl;
+        }
+        else if (num == 0)
+        {
+            cout << "You've inputted a 0\n";
+        }
+        else
+        {
+            cout << "The number must be greater than 0\n";
+        }
+    } while (num < 0);
+```
+### Explanation
+The user writes a normal decimal value (it must be a whole number) and the program outputs the number but written in binary.
+1. Ask the user to input a value
+2. In case the user writes a 0, exit the program
+3. In case the user writes a negative number, loop the program
+4. If the number written is valid, keep dividing the number by two and keep writing the residue of the division until the number is equal to 0.
+5. Print out the string of values done by the formula.
+6. Return 0 to check that the program ran correctly
+### Tests <br /><br />
+#### Valid Run
+<div align ="center">
+<img alt="invalid price" height="100" src="Imagenes/exercise7_1.png"/>
+</div> 
+<br /><br />
+
+#### Invalid Run (0 input)
+<div align ="center">
+<img alt="invalid price" height="100" src="Imagenes/exercise7_2.png"/>
+</div> 
+<br /><br />
+
+#### Invalid Run loop (negative number input)
+<div align ="center">
+<img alt="invalid price" height="100" src="Imagenes/exercise7_3.png"/>
+</div> 
+<br /><br />
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)

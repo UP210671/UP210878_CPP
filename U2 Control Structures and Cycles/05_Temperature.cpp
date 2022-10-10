@@ -3,7 +3,7 @@ Date: 3/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Temperatures.
-Last Modification: 5/10/2022
+Last Modification: 10/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -26,16 +26,16 @@ int main()
         cin >> temperature;
         if (temperature >= maxtemperature)
         {
-            maxtemperature = temperature;
+            maxtemperature = temperature;//Asign new max temperature value if the number inputted is bigger than the previous maxium value
         }
         if (temperature <= mintemperature)
         {
-            mintemperature = temperature;
+            mintemperature = temperature;//Same thing but with minium temprature
         }
         summatorytemperature += temperature;
         contador++;
     } while (contador <= 6);
-    average = summatorytemperature / 6;
+    average = summatorytemperature / 6;//Calculate the average 
     cout << "The average of all the temperatures is " << average << " C° \nThe lowest temperature is " << mintemperature << " C° \nThe highest temperature is " << maxtemperature << " C° \n";
     return 0;
 }
