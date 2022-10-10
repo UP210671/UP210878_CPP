@@ -15,6 +15,9 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 - [Exercise 2](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-2--benefits-program-for-calculating-a-bonus-based-on-an-employee-evaluation)  
 - [Exercise 3](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-3--game-center-customer-price)  
 - [Exercise 4](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-4--vegetarian-pizza-ingredient-selection)  
+- [Exercise 5](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-5--average-temperature-maxium-and-minium-value)
+- [Exercise 6](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-6--products-selling-totals)
+- [Exercise 7](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-7--decimal-number-to-binary-value)
 <br />
 <h1 align="center">
     <img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/>
@@ -338,7 +341,7 @@ The program works the following way:
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise5" height="30" src="Imagenes/exercise5.gif"/>Exercise 5.- Average temperature, maxium and minium value
+<img alt="Exercise5" height="30" src="Imagenes/exercise5.gif"/> Exercise 5.- Average temperature, maxium and minium value
 </h4>
 
 ### Input
@@ -387,7 +390,7 @@ The program is about calculating 6 inputs of a temperature value. Each input gai
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise6" height="30" src="Imagenes/exercise6.gif"/>Exercise 6.- Products selling totals
+<img alt="Exercise6" height="45" src="Imagenes/exercise6.gif"/> Exercise 6.- Products selling totals
 </h4>
 
 ### Input
@@ -434,19 +437,19 @@ This program is used to calculate the selling profits of a user. The user inputs
 ### Tests <br /><br />
 #### Valid run
 <div align ="center">
-<img alt="validproduct" height="100" src="Imagenes/exercise6_1.png"/>
+<img alt="validproduct" height="180" src="Imagenes/exercise6_1.png"/>
 </div> 
 <br /><br />
 
 #### Invalid run (invalid product numbers)
 <div align ="center">
-<img alt="invalidproduct" height="100" src="Imagenes/exercise6_2.png"/>
+<img alt="invalidproduct" height="250" src="Imagenes/exercise6_2.png"/>
 </div> 
 <br /><br />
 
 #### Invalid run (Invalid price numbers)
 <div align ="center">
-<img alt="invalid price" height="100" src="Imagenes/exercise6_3.png"/>
+<img alt="invalid price" height="150" src="Imagenes/exercise6_3.png"/>
 </div> 
 <br /><br />
 
@@ -507,19 +510,19 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 ### Tests <br /><br />
 #### Valid Run
 <div align ="center">
-<img alt="invalid price" height="100" src="Imagenes/exercise7_1.png"/>
+<img alt="invalid price" height="65" src="Imagenes/exercise7_1.png"/>
 </div> 
 <br /><br />
 
 #### Invalid Run (0 input)
 <div align ="center">
-<img alt="invalid price" height="100" src="Imagenes/exercise7_2.png"/>
+<img alt="invalid price" height="70" src="Imagenes/exercise7_2.png"/>
 </div> 
 <br /><br />
 
 #### Invalid Run loop (negative number input)
 <div align ="center">
-<img alt="invalid price" height="100" src="Imagenes/exercise7_3.png"/>
+<img alt="invalid price" height="200" src="Imagenes/exercise7_3.png"/>
 </div> 
 <br /><br />
 
