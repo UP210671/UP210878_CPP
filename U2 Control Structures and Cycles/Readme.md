@@ -15,8 +15,8 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 - [Exercise 2](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-2--benefits-program-for-calculating-a-bonus-based-on-an-employee-evaluation)  
 - [Exercise 3](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-3--game-center-customer-price)  
 - [Exercise 4](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-4--vegetarian-pizza-ingredient-selection)  
-- [Exercise 5](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-5--average-temperature-maxium-and-minium-value)
-- [Exercise 6](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-6--products-selling-totals)
+- [Exercise 5](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-5--average-temperature-maxium-and-minium-value)
+- [Exercise 6](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-6--products-selling-totals)
 - [Exercise 7](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-7--decimal-number-to-binary-value)
 <br />
 <h1 align="center">
@@ -385,6 +385,7 @@ The program is about calculating 6 inputs of a temperature value. Each input gai
 <img alt="temperaturestest" height="100" src="Imagenes/temperaturestest.png"/>
 </div> 
 <br /><br />
+<br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
 
@@ -452,6 +453,7 @@ This program is used to calculate the selling profits of a user. The user inputs
 <img alt="invalid price" height="150" src="Imagenes/exercise6_3.png"/>
 </div> 
 <br /><br />
+<br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
 
@@ -525,5 +527,6 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 <img alt="invalid price" height="200" src="Imagenes/exercise7_3.png"/>
 </div> 
 <br /><br />
+<br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
