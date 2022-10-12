@@ -19,26 +19,35 @@ using namespace std;
 
 int main(){
     int counter, numberinput;
+    do
+    {
     cout << "Write a number to multiply by ";
     cin >> numberinput;
     cout << "How many times do you want it multiplied ";
     cin >> counter;
-    cout << "|";
-    for (int i = 0; i < 63; i++)
+    if (counter<=0)
     {
-        cout << "-";
+        cout << "\nInvalid written number, try again please\n\n";
     }
-    cout << "|";
-    cout << "\n";
-    for (int i = 1; i <= counter; i++)
-    {
-        cout << "|\t"<< i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput*i) << "\t\t|\n|";
+    else{
+        cout << "|";
         for (int i = 0; i < 63; i++)
         {
             cout << "-";
         }
-        cout << "|\n";
+        cout << "|";
+        cout << "\n";
+        for (int i = 1; i <= counter; i++)
+        {
+            cout << "|\t"<< i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput*i) << "\t\t|\n|";
+            for (int i = 0; i < 63; i++)
+            {
+                cout << "-";
+            }
+            cout << "|\n";
+        }
     }
+    } while (counter<=0);
 
     return 0;
 }
