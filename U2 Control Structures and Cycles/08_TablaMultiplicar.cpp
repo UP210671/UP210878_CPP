@@ -3,7 +3,7 @@ Date: 5/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Product table (math)
-Last Modification: 12/10/2022
+Last Modification: 13/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -30,12 +30,10 @@ int main(){
         cout << "\nInvalid written number, try again please\n\n";
     }
     else{
-        cout << "|";
-        for (int i = 0; i < 63; i++)
+        for (int i = 0; i < 65; i++)
         {
-            cout << "-";
+            cout << "=";
         }
-        cout << "|";
         cout << "\n";
         for (int i = 1; i <= counter; i++)
         {
@@ -51,32 +49,3 @@ int main(){
 
     return 0;
 }
-
-    /*
-    cout << "|";
-    for (int i = 0; i < 30; i++)
-    {
-        cout << "-";
-    }
-    cout << "|\n|";
-    for (int i = 0; i < 30; i++)
-    {
-        cout << " ";
-    }
-    cout << "\n";
-    for (int i = 1; i <= counter; i++)
-    {
-        cout << "|"<< i << "     X     " << numberinput << "     =     " << (numberinput*i) << "     |\n|------------------------------|\n";
-    }
-
-        for (int columna = 0; columna <= 30; columna++)
-    {
-        cout << "\n\n";
-        for (int fila = 0; fila <= 30; fila++)
-        {
-            cout << "-";
-           
-        }
-        
-    }
-    */
