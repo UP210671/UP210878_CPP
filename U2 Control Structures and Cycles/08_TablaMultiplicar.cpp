@@ -21,9 +21,9 @@ int main(){
     int counter, numberinput;
     do
     {
-    cout << "Write a number to multiply by ";
+    cout << "Write a number to multiply by ";//Multiplicative
     cin >> numberinput;
-    cout << "How many times do you want it multiplied ";
+    cout << "How many times do you want it multiplied ";//How many times
     cin >> counter;
     if (counter<=0)
     {
@@ -37,7 +37,7 @@ int main(){
         cout << "\n";
         for (int i = 1; i <= counter; i++)
         {
-            cout << "|\t"<< i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput*i) << "\t\t|\n|";
+            cout << "|\t"<< i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput*i) << "\t\t|\n|";//Table format using \t for tab
             for (int i = 0; i < 63; i++)
             {
                 cout << "-";
