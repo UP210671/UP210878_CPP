@@ -530,3 +530,70 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 <br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
+<h1 align="center">
+<img alt="Exercise8" height="30" src="Imagenes/exercise8.gif"/>Exercise 8.- Product of a number done X times in a table format
+</h4>
+
+### Input
+```c++
+    do
+    {
+    cout << "Write a number to multiply by ";//Multiplicative
+    cin >> numberinput;
+    cout << "How many times do you want it multiplied ";//How many times
+    cin >> counter;
+```
+### Process
+```c++
+        if (counter <= 0)
+        {
+            cout << "\nInvalid written number, try again please\n\n"; // If the number is invalid, repeat the process
+        }
+        else
+        {
+            for (int i = 0; i < 65; i++)
+            {
+                cout << "="; // Header
+            }
+            cout << "\n";
+            for (int i = 1; i <= counter; i++)
+            {
+```
+### Output
+```c++
+                cout << "|\t" << i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput * i) << "\t\t|\n|"; // Table format using \t for tab
+                for (int i = 0; i < 63; i++)
+                {
+                    cout << "-";
+                }
+                cout << "|\n";
+            }
+        }
+    } while (counter <= 0); // Loop if the times multiplied is invalid
+```
+### Explanation
+
+
+### Tests <br /><br />
+#### Valid Run
+<div align ="center">
+<img alt="invalid price" height="65" src="Imagenes/exercise8_1.png"/>
+</div> 
+<br /><br />
+
+#### Invalid Run (0 input)
+<div align ="center">
+<img alt="invalid price" height="70" src="Imagenes/exercise8_2.png"/>
+</div> 
+<br /><br />
+
+#### Invalid Run loop (negative number input)
+<div align ="center">
+<img alt="invalid price" height="200" src="Imagenes/exercise8_3.png"/>
+</div> 
+<br /><br />
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)

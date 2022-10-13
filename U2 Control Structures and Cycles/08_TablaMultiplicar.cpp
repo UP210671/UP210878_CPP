@@ -17,35 +17,37 @@ using namespace std;
 
 //------------------ MAIN FUNCTION ---------------------
 
-int main(){
+int main()
+{
     int counter, numberinput;
     do
     {
-    cout << "Write a number to multiply by ";//Multiplicative
-    cin >> numberinput;
-    cout << "How many times do you want it multiplied ";//How many times
-    cin >> counter;
-    if (counter<=0)
-    {
-        cout << "\nInvalid written number, try again please\n\n";
-    }
-    else{
-        for (int i = 0; i < 65; i++)
+        cout << "Write a number to multiply by "; // Multiplicative
+        cin >> numberinput;
+        cout << "How many times do you want it multiplied "; // How many times
+        cin >> counter;
+        if (counter <= 0)
         {
-            cout << "=";
+            cout << "\nInvalid written number, try again please\n\n"; // If the number is invalid, repeat the process
         }
-        cout << "\n";
-        for (int i = 1; i <= counter; i++)
+        else
         {
-            cout << "|\t"<< i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput*i) << "\t\t|\n|";//Table format using \t for tab
-            for (int i = 0; i < 63; i++)
+            for (int i = 0; i < 65; i++)
             {
-                cout << "-";
+                cout << "="; // Header
             }
-            cout << "|\n";
+            cout << "\n";
+            for (int i = 1; i <= counter; i++)
+            {
+                cout << "|\t" << i << "\tX\t" << numberinput << "\t\t=\t" << (numberinput * i) << "\t\t|\n|"; // Table format using \t for tab
+                for (int i = 0; i < 63; i++)
+                {
+                    cout << "-";
+                }
+                cout << "|\n";
+            }
         }
-    }
-    } while (counter<=0);
+    } while (counter <= 0); // Loop if the times multiplied is invalid
 
     return 0;
 }
