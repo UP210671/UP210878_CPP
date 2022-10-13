@@ -17,7 +17,8 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 - [Exercise 4](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-4--vegetarian-pizza-ingredient-selection)  
 - [Exercise 5](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-5--average-temperature-maxium-and-minium-value)
 - [Exercise 6](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-6--products-selling-totals)
-- [Exercise 7](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#exercise-7--decimal-number-to-binary-value)
+- [Exercise 7](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-7--decimal-number-to-binary-value)
+- [Exercise 8](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-8--product-of-a-number-done-x-times-in-a-table-format)
 <br />
 <h1 align="center">
     <img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/>
@@ -459,7 +460,7 @@ This program is used to calculate the selling profits of a user. The user inputs
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise7" height="30" src="Imagenes/exercise7.gif"/>Exercise 7.- Decimal number to binary value
+<img alt="Exercise7" height="30" src="Imagenes/exercise7.gif"/> Exercise 7.- Decimal number to binary value
 </h4>
 
 ### Input
@@ -533,7 +534,7 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise8" height="40" src="Imagenes/exercise8.gif"/>Exercise 8.- Product of a number done X times in a table format
+<img alt="Exercise8" height="40" src="Imagenes/exercise8.gif"/> Exercise 8.- Product of a number done X times in a table format
 </h4>
 
 ### Input
