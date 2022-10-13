@@ -533,7 +533,7 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise8" height="30" src="Imagenes/exercise8.gif"/>Exercise 8.- Product of a number done X times in a table format
+<img alt="Exercise8" height="40" src="Imagenes/exercise8.gif"/>Exercise 8.- Product of a number done X times in a table format
 </h4>
 
 ### Input
@@ -574,24 +574,28 @@ The user writes a normal decimal value (it must be a whole number) and the progr
     } while (counter <= 0); // Loop if the times multiplied is invalid
 ```
 ### Explanation
-
+The program asks the user to input a number to be the multiplying factor of the table, it then asks how many times should it do the multiplication scaling 1 to 1 (i.e 1 * X, 2 * X, 3 * X...).
+1. Ask the user for the number to multiply the values by.
+2. Ask the user how many times should the program run.
+3. Using For and /t, make a table format to visualize the results.
+4. Return 0 to check that the program ran succesfully.
 
 ### Tests <br /><br />
 #### Valid Run
 <div align ="center">
-<img alt="invalid price" height="65" src="Imagenes/exercise8_1.png"/>
+<img alt="invalid price" height="305" src="Imagenes/exercise8_1.png"/>
 </div> 
 <br /><br />
 
-#### Invalid Run (0 input)
+#### Negative numbers
 <div align ="center">
-<img alt="invalid price" height="70" src="Imagenes/exercise8_2.png"/>
+<img alt="invalid price" height="400" src="Imagenes/exercise8_2.png"/>
 </div> 
 <br /><br />
 
-#### Invalid Run loop (negative number input)
+#### Invalid Run loop (negative number input in the X times multiplied)
 <div align ="center">
-<img alt="invalid price" height="200" src="Imagenes/exercise8_3.png"/>
+<img alt="invalid price" height="300" src="Imagenes/exercise8_3.png"/>
 </div> 
 <br /><br />
 <br /><h3 align="center">
