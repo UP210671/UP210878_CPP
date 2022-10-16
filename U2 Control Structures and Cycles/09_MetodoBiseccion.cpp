@@ -3,12 +3,13 @@ Date: 13/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Math method for getting roots
-Last Modification: 13/10/2022
+Last Modification: 16/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
 #include <iostream>
-#include <cmath>
+#include <cmath>//Complex operations
+#include <iomanip>//Setting the number of decimals
 using namespace std;
 
 //---------------------ISSUE---------------------------
@@ -17,35 +18,72 @@ using namespace std;
 
 //------------------ EXTRA FUNCTION ---------------------
 
-double bisection(double num){
-    //Equation y=x²+3x+8
-    return pow(num,2)-num-12;
+float bisection(float num){
+    //Equation y=x²+x-12
+    return pow(num,2)+num-12;
 }
 
 //------------------ MAIN FUNCTION ---------------------
 
 int main(){
-    double a,b,c,ya,yb,yc;
+    int counter=1;
+    float a,b,c,ya,yb,yc;
+    cout << "This graph is using the formula x²+x-12 \n";
     cout << "Give me the value of (a)";
     cin >> a;
     cout << "Give me the value of (b)";
     cin >> b;
-    do
+    c = (a+b)/2;
+    ya = bisection(a);
+    yb = bisection(b);
+    yc = bisection(c);
+    if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){//Check to see if there is a root between the numbers before making anything
+    cout << "| Exercise \t|\t A \t\t|\t B\t\t|\t C \t\t|\t f(A) \t\t\t|\t f(B) \t\t\t|\t f(C) \t\t\t| \n";//Table Header
+    for (int i = 0; i < 185; i++)
     {
-        ya = bisection(a);
-        yb = bisection(b);
-        if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0))
+        cout << "-";
+    }
+    cout << "\n";
+    cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n"; //First data before anything
+    for (int i = 0; i < 185; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
+
+        while (yc >= 0.01 || yc <= -0.01)
         {
-            c = (ya+yb)/2;
-            yc = ya;
-            cout << c;
+            if ((yc > 0 && ya < 0) || (ya > 0 && yc < 0))//Set up b as the new limit (c) and then c would be the half of the previous value
+            {
+                b = c;
+            }
+            else//Same thing but if yb is the opposite sign of yc
+            {
+                a = c;
+            }
+            if (a == b)//If point b ends being point b, the cycle would loop infinately, this prevents that
+            {
+                break;
+            }
+            
+            c = (a+b)/2;
+            ya = bisection(a);
+            yb = bisection(b);
+            yc = bisection(c);
+            counter++;
+            cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n";
+            for (int i = 0; i < 185; i++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
         }
-        else{
-            cout << "There's no root between those two numbers";
-            break;
-        }
-        
-    } while (yc<=-0.01 || yc>=0.01);
+    cout << "The root is approximately " << setprecision(1) <<  c;
+    }
+    else //If yb and ya were both the same sign
+    {
+        cout << "There's no root between the numbers";
+    }
     return 0;
 }
 
