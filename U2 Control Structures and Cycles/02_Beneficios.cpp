@@ -3,7 +3,7 @@ Date: 26/09/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Bonus to employees.
-Last Modification: 28/09/2022
+Last Modification: 16/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
@@ -46,7 +46,7 @@ int main(){
         else if (calificacion >= 0.6){
             cout << "A Meritorous employee.";
         }
-        cout << "\nWith an evaluation of " << calificacion << " , the employee will receive " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";//Print out percentage and value of the bonus
+        cout << "\nWith a rating of " << calificacion << " , the employee will receive " << (calificacion*100) << "%: $" << (bono*calificacion) << "\n";//Print out percentage and value of the bonus
     } 
     else {
         cout << "\nThe value you inputted is invalid, try again.\n";//In case the number is invalid
