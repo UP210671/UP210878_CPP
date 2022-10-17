@@ -19,6 +19,7 @@ This unit is about cycles and control structures (i.e: if, if else, for...). Dur
 - [Exercise 6](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-6--products-selling-totals)
 - [Exercise 7](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-7--decimal-number-to-binary-value)
 - [Exercise 8](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-8--product-of-a-number-done-x-times-in-a-table-format)
+- [Exercise 9](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#-exercise-9--find-the-root-in-a-graph-using-the-bisection-method)
 <br />
 <h1 align="center">
     <img alt="Exercise1" height="30" src="Imagenes/exercise1.gif"/>
