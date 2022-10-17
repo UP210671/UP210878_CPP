@@ -37,7 +37,7 @@ int main(){
     ya = bisection(a);
     yb = bisection(b);
     yc = bisection(c);
-    if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){//Check to see if there is a root between the numbers before making anything
+    if ((yb * ya < 0) || (ya * yc < 0) || (yc * yb < 0)){//Check to see if there is a root between the numbers before making anything
     cout << "| Exercise \t|\t A \t\t|\t B\t\t|\t C \t\t|\t f(A) \t\t\t|\t f(B) \t\t\t|\t f(C) \t\t\t| \n";//Table Header
     for (int i = 0; i < 185; i++)
     {
@@ -60,6 +60,10 @@ int main(){
             else//Same thing but if yb is the opposite sign of yc
             {
                 a = c;
+            }
+            if (a == b)//If point b ends being point b, the cycle would loop infinately, this prevents that
+            {
+                break;
             }
             
             c = (a+b)/2;
