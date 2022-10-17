@@ -61,10 +61,6 @@ int main(){
             {
                 a = c;
             }
-            if (a == b)//If point b ends being point b, the cycle would loop infinately, this prevents that
-            {
-                break;
-            }
             
             c = (a+b)/2;
             ya = bisection(a);

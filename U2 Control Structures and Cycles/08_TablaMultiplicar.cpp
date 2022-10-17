@@ -1,5 +1,5 @@
 /*
-Date: 5/10/2022
+Date: 12/10/2022
 Author: Vinc3nt
 Email: UP210878@alumnos.upa.edu.mx
 Description: Product table (math)
