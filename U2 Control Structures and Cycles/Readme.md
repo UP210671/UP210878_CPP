@@ -534,7 +534,7 @@ The user writes a normal decimal value (it must be a whole number) and the progr
 
 <br /><br /><br /><br /><br />
 <h1 align="center">
-<img alt="Exercise8" height="40" src="Imagenes/exercise8.gif"/> Exercise 8.- Product of a number done X times in a table format
+<img alt="Exercise8" height="45" src="Imagenes/exercise8.gif"/> Exercise 8.- Product of a number done X times in a table format
 </h4>
 
 ### Input
@@ -602,3 +602,110 @@ The program asks the user to input a number to be the multiplying factor of the 
 <br /><h3 align="center">
 
 [Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
+<h1 align="center">
+<img alt="Exercise9" height="60" src="Imagenes/exercise9.gif"/> Exercise 9.- Find the root in a graph using the bisection method
+</h4>
+
+### Input
+```c++
+    cout << "This graph is using the formula x²+x-12 \n";
+    cout << "Give me the value of (a)";
+    cin >> a;
+    cout << "Give me the value of (b)";
+    cin >> b;
+```
+### Process
+```c++
+    c = (a+b)/2;
+    ya = bisection(a);
+    yb = bisection(b);
+    yc = bisection(c);
+    if ((yb > 0 && ya < 0) || (ya > 0 && yb < 0)){//Check to see if there is a root between the numbers before making anything
+    cout << "| Exercise \t|\t A \t\t|\t B\t\t|\t C \t\t|\t f(A) \t\t\t|\t f(B) \t\t\t|\t f(C) \t\t\t| \n";//Table Header
+    for (int i = 0; i < 185; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
+    cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n"; //First data before anything
+    for (int i = 0; i < 185; i++)
+    {
+        cout << "-";
+    }
+    cout << "\n";
+
+        while (yc >= 0.01 || yc <= -0.01)
+        {
+            if ((yc > 0 && ya < 0) || (ya > 0 && yc < 0))//Set up b as the new limit (c) and then c would be the half of the previous value
+            {
+                b = c;
+            }
+            else//Same thing but if yb is the opposite sign of yc
+            {
+                a = c;
+            }
+            if (a == b)//If point b ends being point b, the cycle would loop infinately, this prevents that
+            {
+                break;
+            }
+            
+            c = (a+b)/2;
+            ya = bisection(a);
+            yb = bisection(b);
+            yc = bisection(c);
+            counter++;
+            cout << "| \t" << counter << "\t|\t" << fixed << setprecision(3) << a << "\t\t|\t" << b << "\t\t|\t" << c << "\t\t|\t" << ya << "\t\t\t|\t" << yb << "\t\t\t|\t" << yc << "\t\t\t|\n";
+            for (int i = 0; i < 185; i++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
+        }
+```
+
+### Output
+```c++
+    cout << "The root is approximately " << setprecision(1) <<  c;
+    }
+    else //If yb and ya were both the same sign
+    {
+        cout << "There's no root between the numbers";
+    }
+```
+### Explanation
+The program uses a default formula for calculating the root between two numbers; in this case its _y=x²+x-12_. It first asks the user to input two location in the X axis in the graph, it then determines wheter theres a root between them or not. Afterwards it applies the formula to said inputs and if the results are opposite signs (one is negative and the other positive), there is a root in between them; It then cuts in half the distance between the two points and compares signs with both extremes following the same principle to find out where the root is. Finally, it prints out a table listing all the process it did to find the root and prints out an approximation of where the root is.
+1. Ask the user to input a number in the X axis of the graph.
+2. Apply the formula to the numbers.
+3. If the signs are opposites, there is a root in between.
+4. If the signs are the same, there is no root between them.
+5. Cut the distance in between the locations in half, check both extremes to see if the signs are opposites again
+6. Repeat the process until the formula reaches an approximation to 0-+0.01).
+7. Print out the table listing all the process behind calculating the root
+8. Print out the root
+9. Return an integer (0) because the main function is an integer to check that the program ran succesfully.
+
+### Tests <br />
+### First Root
+<div align ="center">
+<img alt="FirstRoot" height="305" src="Imagenes/exercise9_1.png"/>
+</div> 
+<br /><br />
+
+### Second Root
+<div align ="center">
+<img alt="SecondRoot" height="355" src="Imagenes/exercise9_2.png"/>
+</div> 
+<br /><br />
+
+### No root between the numbers
+<div align ="center">
+<img alt="NoRoot" height="85" src="Imagenes/exercise9_3.png"/>
+</div> 
+<br /><br />
+<br /><h3 align="center">
+
+[Return to Index](https://github.com/UP210878/UP210878_CPP/tree/main/U2%20Control%20Structures%20and%20Cycles#index)
+
+<br /><br /><br /><br /><br />
