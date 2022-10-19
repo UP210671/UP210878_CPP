@@ -477,14 +477,7 @@ This program is used to calculate the selling profits of a user. The user inputs
         {
             while (num > 0)
             {
-                if (num % 2 == 0)
-                {
-                    binary = '0' + binary;
-                }
-                else
-                {
-                    binary = '1' + binary;
-                }
+                (num % 2 == 0)?binary = '0' + binary:binary = '1' + binary;
                 num /= 2;
             }
 ```

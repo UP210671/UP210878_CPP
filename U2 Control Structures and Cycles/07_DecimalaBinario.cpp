@@ -29,14 +29,7 @@ int main()
         {
             while (num > 0)
             {
-                if (num % 2 == 0)
-                {
-                    binary = '0' + binary;//String array so that the binary number appears in correct order
-                }
-                else
-                {
-                    binary = '1' + binary;//String array so that the binary appears in the correct order
-                }
+                (num % 2 == 0)?binary = '0' + binary:binary = '1' + binary;
                 num /= 2;
             }
             cout << "The number you've inputted is " << binary;//Output of the string
