@@ -57,28 +57,6 @@ int main(){
 
 
 
-void Tablero(int){
-    for (int fila = 0; fila < 5; fila++)
-    {
-            for (int columna = 0; columna < 12; columna++)
-            {
-                if (fila== 1 || fila == 3){
-                    cout << "-";
-                }else{
-                    cout << " ";
-                }
-                if (columna==3 || columna == 7)
-                {
-                    cout<<"|";
-                }
-                
-            }
-        cout << "\n";
-    }
-}
-
-
-
 int SeleccionarJugada(){
     int Jugada;
     do
@@ -116,4 +94,28 @@ void ReemplazarCasilla(int Jugada){
     char AreaJuego[row][col]={'O'};
     }
     
+}
+
+void Tablero(int){
+    int x=0, y=0;
+    for (int fila = 0; fila < 5; fila++)
+    {
+            for (int columna = 0; columna < 9; columna++)
+            {
+                if (fila== 1 || fila == 3){
+                    cout << "-";
+                }else{
+                    cout << " " << AreaJuego[x][y] << " |";
+                    y++;
+                }
+                if (columna==2 || columna == 5)
+                {
+                    cout<<"|";
+                }
+                
+            }
+        cout << "\n";
+        x++;
+        y = 0;
+    }
 }
