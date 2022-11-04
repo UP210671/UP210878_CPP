@@ -18,6 +18,7 @@ int SeleccionarJugada();
 void ReemplazarCasilla(int Jugada);
 bool ComprobarJugadaOcupada(int Jugada);
 void ModoDeJuego(int);
+bool VerificarGanador(int Jugada);
 
 //---------------------ISSUE---------------------------
 /*
@@ -46,8 +47,8 @@ int main(){
     }
     else if (casillaocupada == false)
     {
-        ReemplazarCasilla(jugada);
         system ("clear");
+        ReemplazarCasilla(jugada);
         Tablero(tablero);
         TurnoJugador++;
     }
@@ -71,7 +72,7 @@ int SeleccionarJugada(){
 
 
 bool ComprobarJugadaOcupada(int Jugada){
-int row = Jugada%3, col = Jugada-1; 
+int row = Jugada/10, col = Jugada-1; 
         if (AreaJuego[row][col]=='X' || AreaJuego[row][col]=='O')
         {
             return true;//Significa que la casilla esta ocupada
@@ -85,13 +86,13 @@ int row = Jugada%3, col = Jugada-1;
 
 void ReemplazarCasilla(int Jugada){
     if (TurnoJugador%2==0){
-    int row = Jugada%3, col = Jugada - 1;
-    char AreaJuego[row][col]={'X'};
+    int row = Jugada/10, col = Jugada - 1;
+    AreaJuego[row][col]='O';
     }
     else
     {
-    int row = Jugada%3, col = Jugada - 1;
-    char AreaJuego[row][col]={'O'};
+    int row = Jugada/10, col = Jugada - 1;
+    AreaJuego[row][col]='X';
     }
     
 }
@@ -104,18 +105,29 @@ void Tablero(int){
             {
                 if (fila== 1 || fila == 3){
                     cout << "-";
-                }else{
-                    cout << " " << AreaJuego[x][y] << " |";
+                }else if (columna==1 || columna == 4 || columna == 7)
+                {
+                    cout << AreaJuego[x][y];
                     y++;
+                }else
+                {
+                    cout << " ";
                 }
                 if (columna==2 || columna == 5)
                 {
                     cout<<"|";
                 }
-                
             }
         cout << "\n";
-        x++;
-        y = 0;
+        if (fila%2==0)
+        {
+            x++;
+        }
+        
+        y=0;
     }
+}
+
+bool VerificarGanador(int Jugada){
+    
 }
