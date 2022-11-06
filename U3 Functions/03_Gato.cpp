@@ -33,8 +33,10 @@ bool VerificarGanador(int Jugada);
 
 int main(){
     int tablero,jugador1,jugador2,computadora,jugada;
-    bool casillaocupada = true;
+    bool casillaocupada = true, ganador = true;
     Tablero(tablero);
+    ganador = VerificarGanador(jugada);
+    do{
     jugada = SeleccionarJugada();
     casillaocupada = ComprobarJugadaOcupada(jugada);
     if (casillaocupada == true)
@@ -42,17 +44,17 @@ int main(){
         do
         {
             cout << "Casilla invalida, elija otra\n";
-            jugada = SeleccionarJugada();
+            break;
         } while (casillaocupada == true);
     }
     else if (casillaocupada == false)
     {
-        system ("clear");
+        system ("CLS");
         ReemplazarCasilla(jugada);
         Tablero(tablero);
         TurnoJugador++;
     }
-    
+    }while(ganador == false);
     return 0;
 }
 
@@ -129,5 +131,27 @@ void Tablero(int){
 }
 
 bool VerificarGanador(int Jugada){
+    int punto = 0;
+    for (int row = 0; row < 3; row++)
+    {
+        for (int col = 0; col < 3; col++)
+        {
+            if (AreaJuego[row][col]=='X' || AreaJuego[row][col]=='O')
+            {
+                punto++;
+            }
+            else if (AreaJuego[col][row]=='X' || AreaJuego[row][col] == 'O')
+            {
+                punto++;
+            }
+        }
+        
+    }
+    if (punto>3)
+    {
+        return true;
+    }else{
+        return false;
+    }
     
 }
