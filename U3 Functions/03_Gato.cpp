@@ -13,7 +13,7 @@ using namespace std;
 
 void Tablero(int);
 int TurnoJugador = 1;
-char AreaJuego[3][3]={{'1','2','3'},{'4','5','6'},{'7','8','9'}};
+char AreaJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 int SeleccionarJugada();
 void ReemplazarCasilla(int Jugada);
 bool ComprobarJugadaOcupada(int Jugada);
@@ -22,7 +22,7 @@ bool VerificarGanador(int Jugada);
 
 //---------------------ISSUE---------------------------
 /*
- 1 | 2 | 3  
+ 1 | 2 | 3
 ---|---|---
  4 | 5 | 6
 ---|---|---
@@ -31,127 +31,134 @@ bool VerificarGanador(int Jugada);
 */
 //------------------ MAIN FUNCTION ---------------------
 
-int main(){
-    int tablero,jugador1,jugador2,computadora,jugada;
-    bool casillaocupada = true, ganador = true;
+int main()
+{
+    int tablero, jugador1, jugador2, computadora, jugada;
+    bool casillaocupada = true, ganador = false;
     Tablero(tablero);
-    ganador = VerificarGanador(jugada);
-    do{
-    jugada = SeleccionarJugada();
-    casillaocupada = ComprobarJugadaOcupada(jugada);
-    if (casillaocupada == true)
-    {
-        do
-        {
-            cout << "Casilla invalida, elija otra\n";
-            break;
-        } while (casillaocupada == true);
-    }
-    else if (casillaocupada == false)
-    {
-        system ("CLS");
-        ReemplazarCasilla(jugada);
-        Tablero(tablero);
-        TurnoJugador++;
-    }
-    }while(ganador == false);
-    return 0;
-}
-
-
-
-int SeleccionarJugada(){
-    int Jugada;
     do
     {
-    cout << "Dame tu jugada: \n";
-    cin >> Jugada;
-    } while (Jugada < 0 && Jugada >= 9);
-    
-    return Jugada;
-}
-
-
-
-bool ComprobarJugadaOcupada(int Jugada){
-int row = Jugada/10, col = Jugada-1; 
-        if (AreaJuego[row][col]=='X' || AreaJuego[row][col]=='O')
+        jugada = SeleccionarJugada();
+        casillaocupada = ComprobarJugadaOcupada(jugada);
+        if (casillaocupada == true)
         {
-            return true;//Significa que la casilla esta ocupada
+            do
+            {
+                cout << "Casilla invalida, elija otra\n";
+                break;
+            } while (casillaocupada == true);
         }
-        else
+        else if (casillaocupada == false)
         {
-            return false;
+            system("clear");
+            ReemplazarCasilla(jugada);
+            Tablero(tablero);
+            TurnoJugador++;
         }
-        
-    }
-
-void ReemplazarCasilla(int Jugada){
-    if (TurnoJugador%2==0){
-    int row = Jugada/10, col = Jugada - 1;
-    AreaJuego[row][col]='O';
+    ganador = VerificarGanador(ganador);
+    } while (ganador == false);
+    if (TurnoJugador % 2 == 0)
+    {
+        cout << "Gano el jugador 1";
     }
     else
     {
-    int row = Jugada/10, col = Jugada - 1;
-    AreaJuego[row][col]='X';
+        cout << "Gano el jugador 2";
     }
-    
+
+    return 0;
 }
 
-void Tablero(int){
-    int x=0, y=0;
+int SeleccionarJugada()
+{
+    int Jugada;
+    do
+    {
+        cout << "Dame tu jugada: \n";
+        cin >> Jugada;
+    } while (Jugada < 0 && Jugada >= 9);
+
+    return Jugada;
+}
+
+bool ComprobarJugadaOcupada(int Jugada)
+{
+    int row = Jugada / 10, col = Jugada - 1;
+    if (AreaJuego[row][col] == 'X' || AreaJuego[row][col] == 'O')
+    {
+        return true; // Significa que la casilla esta ocupada
+    }
+    else
+    {
+        return false;
+    }
+}
+
+void ReemplazarCasilla(int Jugada)
+{
+    if (TurnoJugador % 2 == 0)
+    {
+        int row = Jugada / 10, col = Jugada - 1;
+        AreaJuego[row][col] = 'O';
+    }
+    else
+    {
+        int row = Jugada / 10, col = Jugada - 1;
+        AreaJuego[row][col] = 'X';
+    }
+}
+
+void Tablero(int)
+{
+    int x = 0, y = 0;
     for (int fila = 0; fila < 5; fila++)
     {
-            for (int columna = 0; columna < 9; columna++)
+        for (int columna = 0; columna < 9; columna++)
+        {
+            if (fila == 1 || fila == 3)
             {
-                if (fila== 1 || fila == 3){
-                    cout << "-";
-                }else if (columna==1 || columna == 4 || columna == 7)
-                {
-                    cout << AreaJuego[x][y];
-                    y++;
-                }else
-                {
-                    cout << " ";
-                }
-                if (columna==2 || columna == 5)
-                {
-                    cout<<"|";
-                }
+                cout << "-";
             }
+            else if (columna == 1 || columna == 4 || columna == 7)
+            {
+                cout << AreaJuego[x][y];
+                y++;
+            }
+            else
+            {
+                cout << " ";
+            }
+            if (columna == 2 || columna == 5)
+            {
+                cout << "|";
+            }
+        }
         cout << "\n";
-        if (fila%2==0)
+        if (fila % 2 == 0)
         {
             x++;
         }
-        
-        y=0;
+
+        y = 0;
     }
 }
 
-bool VerificarGanador(int Jugada){
+bool VerificarGanador(int Jugada)
+{
     int punto = 0;
-    for (int row = 0; row < 3; row++)
+    bool VerificarGanador = false;
+    for (int posicion = 0; posicion < 3; posicion++)
     {
-        for (int col = 0; col < 3; col++)
+        if ((AreaJuego[0][posicion] == AreaJuego[1][posicion]) && (AreaJuego[0][posicion] == AreaJuego[2][posicion]))
         {
-            if (AreaJuego[row][col]=='X' || AreaJuego[row][col]=='O')
-            {
-                punto++;
-            }
-            else if (AreaJuego[col][row]=='X' || AreaJuego[row][col] == 'O')
-            {
-                punto++;
-            }
+            VerificarGanador = true;
+            break;
         }
-        
+        else if ((AreaJuego[posicion][0] == AreaJuego[posicion][1]) && (AreaJuego[posicion][0] == AreaJuego[posicion][2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
     }
-    if (punto>3)
-    {
-        return true;
-    }else{
-        return false;
-    }
-    
+    return VerificarGanador;
 }
