@@ -159,6 +159,16 @@ bool VerificarGanador(int Jugada)
             VerificarGanador = true;
             break;
         }
+        else if ((AreaJuego[posicion][posicion] == AreaJuego[posicion+1][posicion+1]) && (AreaJuego[posicion][posicion] == AreaJuego[posicion+2][posicion+2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
+        else if ((AreaJuego[2][0] == AreaJuego[1][1]) && (AreaJuego[2][0] == AreaJuego[0][2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
     }
     return VerificarGanador;
 }
