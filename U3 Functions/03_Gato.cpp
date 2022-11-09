@@ -12,14 +12,14 @@ Last Modification: 26/10/2022
 using namespace std;
 
 void Tablero(int);
-int TurnoJugador = 1;
+int TurnoJugador = 0;
 char AreaJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 int SeleccionarJugada();
 void ReemplazarCasilla(int Jugada);
 bool ComprobarJugadaOcupada(int Jugada);
 void ModoDeJuego(int);
 bool VerificarGanador(int Jugada);
-
+void TurnoCPU(int);
 //---------------------ISSUE---------------------------
 /*
  1 | 2 | 3
@@ -33,9 +33,13 @@ bool VerificarGanador(int Jugada);
 
 int main()
 {
-    int tablero, jugador1, jugador2, computadora, jugada;
+    int tablero, jugador1, jugador2, computadora, jugada,ModoJuego;
     bool casillaocupada = true, ganador = false;
     Tablero(tablero);
+    cout << "Que modo de juego deseas jugar?\n1. VS HUMANO\n2. VS CPU\n";
+    cin >> ModoJuego;
+    if (ModoJuego=1)
+    {
     do
     {
         jugada = SeleccionarJugada();
@@ -56,16 +60,50 @@ int main()
             TurnoJugador++;
         }
     ganador = VerificarGanador(ganador);
-    } while (ganador == false);
+    } while (ganador == false && TurnoJugador<10);
+    if (TurnoJugador<10){
     if (TurnoJugador % 2 == 0)
     {
-        cout << "Gano el jugador 1";
+        cout << "Gano el jugador 2\n";
     }
     else
     {
-        cout << "Gano el jugador 2";
+        cout << "Gano el jugador 1\n";
     }
-
+    } else{
+        cout << "Empate\n";
+    }
+    } 
+    else if (ModoJuego = 2)//--------------------------------------------------CPU----------------------------------------------
+    {
+    do
+    {
+        jugada = SeleccionarJugada();
+        casillaocupada = ComprobarJugadaOcupada(jugada);
+        if (casillaocupada == true)
+        {
+            do
+            {
+                cout << "Casilla invalida, elija otra\n";
+                break;
+            } while (casillaocupada == true);
+        }
+        else if (casillaocupada == false)
+        {
+            system("clear");
+            ReemplazarCasilla(jugada);
+            Tablero(tablero);
+            TurnoJugador++;
+            TurnoCPU(jugada);
+        }
+    ganador = VerificarGanador(ganador);
+    } while (ganador == false && TurnoJugador<10);
+    } else
+    {
+        cout << "No seleccionaste un modo de juego válido :(";
+    }
+    
+    
     return 0;
 }
 
@@ -74,9 +112,9 @@ int SeleccionarJugada()
     int Jugada;
     do
     {
-        cout << "Dame tu jugada: \n";
+        cout << "Jugador " << TurnoJugador%2+1 << " Dame tu jugada del 1 al 9: \n";
         cin >> Jugada;
-    } while (Jugada < 0 && Jugada >= 9);
+    } while (Jugada < 0 || Jugada > 9);
 
     return Jugada;
 }
@@ -171,4 +209,45 @@ bool VerificarGanador(int Jugada)
         }
     }
     return VerificarGanador;
+}
+
+void TurnoCPU(int){
+    for (int posicion = 0; posicion < 3; posicion++)
+    {
+        if (AreaJuego[0][posicion] == AreaJuego[1][posicion])
+        {
+            AreaJuego[2][posicion] = 'O';
+            break;
+        }
+        else if (AreaJuego[0][posicion] == AreaJuego[2][posicion])
+        {
+            AreaJuego[1][posicion] = 'O';
+            break;
+        }
+        else if (AreaJuego[1][posicion] == AreaJuego[2][posicion])
+        {
+            AreaJuego[0][posicion] = 'O';
+            break;
+        }
+        else if (AreaJuego[posicion][0] == AreaJuego[posicion][1])
+        {
+            AreaJuego[posicion][2] = 'O';
+            break;
+        }
+        else if (AreaJuego[posicion][0] == AreaJuego[posicion][2])
+        {
+            AreaJuego[posicion][1] = 'O';
+            break;
+        }
+        else if (AreaJuego[posicion][1] == AreaJuego[posicion][2])
+        {
+            AreaJuego[posicion][0] = 'O';
+            break;
+        } else{
+            AreaJuego [posicion][posicion] = '0';
+            break;
+        }
+    }
+    
+    TurnoJugador++;
 }
