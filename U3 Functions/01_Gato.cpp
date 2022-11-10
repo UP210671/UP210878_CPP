@@ -21,8 +21,8 @@ void ModoDeJuego(int);
 bool VerificarGanador(int Jugada);
 int TurnoCPU(int);
 int MejorJugada(int);
-const string PC = "Maquina";
-const string HUMANO = "Humano";
+const char PC = 'X';
+const char HUMANO = 'O';
 const string TABLERO = "Real";
 const string TABLEROCPU = "Imaginario";
 //---------------------ISSUE---------------------------
@@ -160,12 +160,12 @@ void ReemplazarCasilla(int Jugada)
     if (TurnoJugador % 2 == 0)
     {
         int row = Jugada / 10, col = Jugada - 1;
-        AreaJuego[row][col] = 'O';
+        AreaJuego[row][col] = 'X';
     }
     else
     {
         int row = Jugada / 10, col = Jugada - 1;
-        AreaJuego[row][col] = 'X';
+        AreaJuego[row][col] = 'O';
     }
 }
 
@@ -253,6 +253,6 @@ int TurnoCPU(int Jugada){
     return Jugada;
 }
 
-int MejorJugada(int Jugada){
-
+int MejorJugada(char Jugador){
+    
 }
