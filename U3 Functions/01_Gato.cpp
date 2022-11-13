@@ -9,20 +9,25 @@ Last Modification: 26/10/2022
 //------------ PREPROCESSOR DIRECTIVES ----------------
 #include <iostream>
 
+#include <time.h>
+
 using namespace std;
 
 void Tablero(int);
 int TurnoJugador = 0;
 char AreaJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+char TableroImaginario[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
 int SeleccionarJugada();
 void ReemplazarCasilla(int Jugada);
 bool ComprobarJugadaOcupada(int Jugada);
+bool ComprobarJugadaOcupadaImaginaria(int);
 void ModoDeJuego(int);
 bool VerificarGanador(int Jugada);
-int TurnoCPU(int);
-int MejorJugada(int);
-const char PC = 'X';
-const char HUMANO = 'O';
+bool VerificarGanadorImaginario(int);
+int TurnoCPU();
+int MejorJugada(char);
+const char PC = 'O';
+const char HUMANO = 'X';
 const string TABLERO = "Real";
 const string TABLEROCPU = "Imaginario";
 //---------------------ISSUE---------------------------
@@ -88,7 +93,7 @@ int main()
             jugada = SeleccionarJugada();
         } else
         {
-            jugada = TurnoCPU(CPU);
+            jugada = TurnoCPU();
         }
         
         casillaocupada = ComprobarJugadaOcupada(jugada);
@@ -102,14 +107,14 @@ int main()
         }
         else if (casillaocupada == false)
         {
-            system("clear");
+            system("CLS");
             ReemplazarCasilla(jugada);
             Tablero(tablero);
             TurnoJugador++;
         }
     ganador = VerificarGanador(ganador);
-    } while (ganador == false && TurnoJugador<10);
-    if (TurnoJugador<10){
+    } while (ganador == false && TurnoJugador<9);
+    if (TurnoJugador<9){
     if (TurnoJugador % 2 == 0)
     {
         cout << "Gano el CPU\n";
@@ -234,29 +239,129 @@ bool VerificarGanador(int Jugada)
     return VerificarGanador;
 }
 
-int TurnoCPU(int Jugada){
-    //Revisar que CPU gana
+int TurnoCPU()
+{
+    int Jugada;
+    bool casillaocupada = false;
+    srand(time(NULL));
     Jugada = MejorJugada(PC);
-    if (Jugada != -1)//Que gane yo
+    if (Jugada != -1){
         return Jugada;
+    }
 
-
-    //Revisar que Jugador gane
     Jugada = MejorJugada(HUMANO);
-    if (Jugada != -1)//Que no gane el humano
+    if (Jugada != -1)
     {
         return Jugada;
     }
     
-
-    Jugada = rand()%10;//En caso de que ninguno ni otro, hacer lo que sepa
+    Jugada = 1 + rand()%9;//En caso de que ninguno ni otro, aleatorio
     return Jugada;
 }
 
-int MejorJugada(char Jugador){
-    do
+void AreaImaginaria(){
+    for (int row = 0; row < 3; row++)
     {
-        char TableroImaginario[3][3]=AreaJuego[3][3];
-    } while ();
+        for (int col = 0; col < 3; col++)
+        {
+            TableroImaginario[row][col]=AreaJuego[row][col];
+        }
+        
+    }
+}
+
+bool ComprobarJugadaOcupadaImaginaria(int Jugada)
+{
+    int row = Jugada / 10, col = Jugada - 1;
+    if (TableroImaginario[row][col] == 'X' || TableroImaginario[row][col] == 'O')
+    {
+        return true; // Significa que la casilla esta ocupada
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool VerificarGanadorImaginario(int Jugada)
+{
+    bool VerificarGanador = false;
+    for (int posicion = 0; posicion < 3; posicion++)
+    {
+        if ((TableroImaginario[0][posicion] == TableroImaginario[1][posicion]) && (TableroImaginario[0][posicion] == TableroImaginario[2][posicion]))
+        {
+            VerificarGanador = true;
+            break;
+        }
+        else if ((TableroImaginario[posicion][0] == TableroImaginario[posicion][1]) && (TableroImaginario[posicion][0] == TableroImaginario[posicion][2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
+        else if ((TableroImaginario[posicion][posicion] == TableroImaginario[posicion+1][posicion+1]) && (TableroImaginario[posicion][posicion] == TableroImaginario[posicion+2][posicion+2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
+        else if ((TableroImaginario[2][0] == TableroImaginario[1][1]) && (TableroImaginario[2][0] == TableroImaginario[0][2]))
+        {
+            VerificarGanador = true;
+            break;
+        }
+    }
+    return VerificarGanador;
+}
+
+void ReemplazarCasillaXImaginaria(int Jugada)
+{
+
+        int row = Jugada / 10, col = Jugada - 1;
+        TableroImaginario[row][col] = 'X';
+}
+
+void ReemplazarCasillaOImaginaria(int Jugada)
+{
+        int row = Jugada / 10, col = Jugada - 1;
+        TableroImaginario[row][col] = 'O';
+}
+
+int MejorJugada(char Jugador){
+    bool Casillaocupada = false;
+    bool Ganador = false;
+    int JugadaCPU = 0;
+    AreaImaginaria();
+    if (Jugador == 'X'){
+        do
+        {
+            JugadaCPU++;
+            Casillaocupada = ComprobarJugadaOcupadaImaginaria(JugadaCPU);
+            if (Casillaocupada == false)
+            {
+                ReemplazarCasillaXImaginaria(JugadaCPU);
+                Ganador = VerificarGanadorImaginario(JugadaCPU);
+            }
+            AreaImaginaria();
+        } while (JugadaCPU <=9 && Ganador == false);
+    }
+    else
+    {
+        do
+        {
+            JugadaCPU++;
+            Casillaocupada = ComprobarJugadaOcupadaImaginaria(JugadaCPU);
+            if (Casillaocupada == false)
+            {
+                ReemplazarCasillaOImaginaria(JugadaCPU);
+                Ganador = VerificarGanadorImaginario(JugadaCPU);
+            }
+            AreaImaginaria();
+        } while (JugadaCPU <= 9 && Ganador == false);
+        
+    }
+    if (JugadaCPU >= 10)
+    {
+        JugadaCPU= -1;
+    }
+    return JugadaCPU;
     
 }
