@@ -9,7 +9,6 @@ Last Modification: 26/10/2022
 //------------ PREPROCESSOR DIRECTIVES ----------------
 #include <iostream>
 
-
 using namespace std;
 /*Main board format*/
 void Tablero(int);
@@ -53,7 +52,7 @@ Params:
 MejorJugada*/
 int TurnoCPU();
 /*Calculation for all possibilities to determine the best play
-Params: 
+Params:
 VerificarGanadorImaginario, AreaImaginaria, ComprobarJugadaOcupadaImaginaria, ReemplazarCasillaXImaginaria, ReemplazarCasillaOImaginaria*/
 int MejorJugada(char);
 
@@ -74,95 +73,101 @@ const string TABLEROCPU = "Imaginario";
 
 int main()
 {
-    int tablero, jugador1, jugador2, computadora, jugada,ModoJuego, CPU;
+    int tablero, jugador1, jugador2, computadora, jugada, ModoJuego, CPU;
     bool casillaocupada = true, ganador = false;
     Tablero(tablero);
     cout << "------GAMEMODE------\n1. VS\n2. Singleplayer\n";
     cin >> ModoJuego;
-    if (ModoJuego==1)//----------------------------------------------Player vs Player--------------------------------------------
+    if (ModoJuego == 1) //----------------------------------------------Player vs Player--------------------------------------------
     {
-    do
-    {
-        jugada = SeleccionarJugada();
-        casillaocupada = ComprobarJugadaOcupada(jugada);
-        if (casillaocupada == true)
-        {
-            do
-            {
-                cout << "Invalid play. Try again\n";
-                break;
-            } while (casillaocupada == true);
-        }
-        else if (casillaocupada == false)
-        {
-            system("clear");
-            ReemplazarCasilla(jugada);
-            Tablero(tablero);
-            TurnoJugador++;
-        }
-    ganador = VerificarGanador(ganador);
-    } while (ganador == false && TurnoJugador<10);
-    if (TurnoJugador<10){
-    if (TurnoJugador % 2 == 0)
-    {
-        cout << "PLAYER 2 WON\n";
-    }
-    else
-    {
-        cout << "PLAYER 1 WON\n";
-    }
-    } else{
-        cout << "DRAW\n";
-    }
-    } 
-    else if (ModoJuego == 2)//--------------------------------------------------CPU------------------------------------------------
-    {
-    do
-    {
-        if (TurnoJugador%2==0)
+        do
         {
             jugada = SeleccionarJugada();
-        } else
-        {
-            jugada = TurnoCPU();
-        }
-        
-        casillaocupada = ComprobarJugadaOcupada(jugada);
-        if (casillaocupada == true)
-        {
-            do
+            casillaocupada = ComprobarJugadaOcupada(jugada);
+            if (casillaocupada == true)
             {
-                cout << "Invalid play. Try again\n";
-                break;
-            } while (casillaocupada == true);
-        }
-        else if (casillaocupada == false)
+                do
+                {
+                    cout << "Invalid play. Try again\n";
+                    break;
+                } while (casillaocupada == true);
+            }
+            else if (casillaocupada == false)
+            {
+                system("clear");
+                ReemplazarCasilla(jugada);
+                Tablero(tablero);
+                TurnoJugador++;
+            }
+            ganador = VerificarGanador(ganador);
+        } while (ganador == false && TurnoJugador < 10);
+        if (TurnoJugador < 10)
         {
-            system("clear");
-            ReemplazarCasilla(jugada);
-            Tablero(tablero);
-            TurnoJugador++;
+            if (TurnoJugador % 2 == 0)
+            {
+                cout << "PLAYER 2 WON\n";
+            }
+            else
+            {
+                cout << "PLAYER 1 WON\n";
+            }
         }
-    ganador = VerificarGanador(ganador);
-    } while (ganador == false && TurnoJugador<9);
-    if (TurnoJugador<9){
-    if (TurnoJugador % 2 == 0)
+        else
+        {
+            cout << "DRAW\n";
+        }
+    }
+    else if (ModoJuego == 2) //--------------------------------------------------CPU------------------------------------------------
     {
-        cout << "YOU LOSE :(\n";
+        do
+        {
+            if (TurnoJugador % 2 == 0)
+            {
+                jugada = SeleccionarJugada();
+            }
+            else
+            {
+                jugada = TurnoCPU();
+            }
+
+            casillaocupada = ComprobarJugadaOcupada(jugada);
+            if (casillaocupada == true)
+            {
+                do
+                {
+                    cout << "Invalid play. Try again\n";
+                    break;
+                } while (casillaocupada == true);
+            }
+            else if (casillaocupada == false)
+            {
+                system("clear");
+                ReemplazarCasilla(jugada);
+                Tablero(tablero);
+                TurnoJugador++;
+            }
+            ganador = VerificarGanador(ganador);
+        } while (ganador == false && TurnoJugador < 9);
+        if (TurnoJugador < 9)
+        {
+            if (TurnoJugador % 2 == 0)
+            {
+                cout << "YOU LOSE :(\n";
+            }
+            else
+            {
+                cout << "YOU WON!\n";
+            }
+        }
+        else
+        {
+            cout << "DRAW\n";
+        }
     }
     else
-    {
-        cout << "YOU WON!\n";
-    }
-    } else{
-        cout << "DRAW\n";
-    }
-    } else
     {
         cout << "Invalid gamemode :(";
     }
-    
-    
     return 0;
 }
 
@@ -171,10 +176,9 @@ int SeleccionarJugada()
     int Jugada;
     do
     {
-        cout << "Player " << TurnoJugador%2+1 << " turn: \n";
+        cout << "Player " << TurnoJugador % 2 + 1 << " turn: \n";
         cin >> Jugada;
     } while (Jugada < 0 || Jugada > 9);
-
     return Jugada;
 }
 
@@ -256,7 +260,7 @@ bool VerificarGanador(int Jugada)
             VerificarGanador = true;
             break;
         }
-        else if ((AreaJuego[posicion][posicion] == AreaJuego[posicion+1][posicion+1]) && (AreaJuego[posicion][posicion] == AreaJuego[posicion+2][posicion+2]))
+        else if ((AreaJuego[posicion][posicion] == AreaJuego[posicion + 1][posicion + 1]) && (AreaJuego[posicion][posicion] == AreaJuego[posicion + 2][posicion + 2]))
         {
             VerificarGanador = true;
             break;
@@ -275,7 +279,8 @@ int TurnoCPU()
     int Jugada;
     bool casillaocupada = false;
     Jugada = MejorJugada(PC);
-    if (Jugada != -1){
+    if (Jugada != -1)
+    {
         return Jugada;
     }
 
@@ -287,20 +292,19 @@ int TurnoCPU()
     while (casillaocupada == false)
     {
         casillaocupada = ComprobarJugadaOcupada(Jugada);
-        Jugada = 1 + rand()%9;//En caso de que ninguno ni otro, aleatoria
+        Jugada = 1 + rand() % 9; // En caso de que ninguno ni otro, aleatoria
     }
-    
     return Jugada;
 }
 
-void AreaImaginaria(){
+void AreaImaginaria()
+{
     for (int row = 0; row < 3; row++)
     {
         for (int col = 0; col < 3; col++)
         {
-            TableroImaginario[row][col]=AreaJuego[row][col];
+            TableroImaginario[row][col] = AreaJuego[row][col];
         }
-        
     }
 }
 
@@ -332,7 +336,7 @@ bool VerificarGanadorImaginario(int Jugada)
             VerificarGanador = true;
             break;
         }
-        else if ((TableroImaginario[posicion][posicion] == TableroImaginario[posicion+1][posicion+1]) && (TableroImaginario[posicion][posicion] == TableroImaginario[posicion+2][posicion+2]))
+        else if ((TableroImaginario[posicion][posicion] == TableroImaginario[posicion + 1][posicion + 1]) && (TableroImaginario[posicion][posicion] == TableroImaginario[posicion + 2][posicion + 2]))
         {
             VerificarGanador = true;
             break;
@@ -349,22 +353,24 @@ bool VerificarGanadorImaginario(int Jugada)
 void ReemplazarCasillaXImaginaria(int Jugada)
 {
 
-        int row = Jugada / 10, col = Jugada - 1;
-        TableroImaginario[row][col] = 'X';
+    int row = Jugada / 10, col = Jugada - 1;
+    TableroImaginario[row][col] = 'X';
 }
 
 void ReemplazarCasillaOImaginaria(int Jugada)
 {
-        int row = Jugada / 10, col = Jugada - 1;
-        TableroImaginario[row][col] = 'O';
+    int row = Jugada / 10, col = Jugada - 1;
+    TableroImaginario[row][col] = 'O';
 }
 
-int MejorJugada(char Jugador){
+int MejorJugada(char Jugador)
+{
     bool Casillaocupada = false;
     bool Ganador = false;
     int JugadaCPU = 0;
     AreaImaginaria();
-    if (Jugador == 'X'){
+    if (Jugador == 'X')
+    {
         do
         {
             JugadaCPU++;
@@ -375,7 +381,7 @@ int MejorJugada(char Jugador){
                 Ganador = VerificarGanadorImaginario(JugadaCPU);
             }
             AreaImaginaria();
-        } while (JugadaCPU <=9 && Ganador == false);
+        } while (JugadaCPU <= 9 && Ganador == false);
     }
     else
     {
@@ -390,12 +396,10 @@ int MejorJugada(char Jugador){
             }
             AreaImaginaria();
         } while (JugadaCPU <= 9 && Ganador == false);
-        
     }
     if (JugadaCPU >= 10)
     {
-        JugadaCPU= -1;
+        JugadaCPU = -1;
     }
     return JugadaCPU;
-    
 }
