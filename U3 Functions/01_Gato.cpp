@@ -22,21 +22,39 @@ char TableroImaginario[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'
 int SeleccionarJugada();
 /*Change value in the vector AreaJuego[3][3]*/
 void ReemplazarCasilla(int Jugada);
-/*Check if the play has already been inputted*/
+/*Change values in TableroImaginario[3][3] with X*/
+void ReemplazarCasillaXImaginaria(int);
+/*Change values in TableroImaginario[3][3] with O*/
+void ReemplazarCasillaOImaginaria(int);
+/*Check if the play has already been inputted
+Params:
+AreaJuego[3][3]*/
 bool ComprobarJugadaOcupada(int Jugada);
-/*CPU process to determine if the following play has alread been used in its imaginary board*/
+/*CPU process to determine if the following play has alread been used in its imaginary board
+Params:
+TableroImaginario[3][3]*/
 bool ComprobarJugadaOcupadaImaginaria(int);
 /*Gamemode, 2 players or VS CPU*/
 void ModoDeJuego(int);
-/*Check if someone has won the match*/
+/*Check if someone has won the match
+Params:
+AreaJuego[3][3]*/
 bool VerificarGanador(int Jugada);
-/*CPU process to determine if the following play wins or not*/
+/*CPU process to determine if the following play wins or not
+Params:
+TableroImaginario[3][3]*/
 bool VerificarGanadorImaginario(int);
-/*Cloned Board Area for the CPU for calculating all possible plays*/
+/*Cloned Board Area for the CPU for calculating all possible plays
+Params:
+AreaJuego[3][3]*/
 void AreaImaginaria();
-/*Value returned by the CPU, random or calculated*/
+/*Value returned by the CPU, random or calculated
+Params:
+MejorJugada*/
 int TurnoCPU();
-/*Calculation for all possibilities to determine the best play*/
+/*Calculation for all possibilities to determine the best play
+Params: 
+VerificarGanadorImaginario, AreaImaginaria, ComprobarJugadaOcupadaImaginaria, ReemplazarCasillaXImaginaria, ReemplazarCasillaOImaginaria*/
 int MejorJugada(char);
 
 const char PC = 'O';
