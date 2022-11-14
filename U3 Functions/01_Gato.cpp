@@ -9,7 +9,6 @@ Last Modification: 26/10/2022
 //------------ PREPROCESSOR DIRECTIVES ----------------
 #include <iostream>
 
-#include <time.h>
 
 using namespace std;
 /*Main board format*/
@@ -257,7 +256,6 @@ int TurnoCPU()
 {
     int Jugada;
     bool casillaocupada = false;
-    srand(time(NULL));
     Jugada = MejorJugada(PC);
     if (Jugada != -1){
         return Jugada;
