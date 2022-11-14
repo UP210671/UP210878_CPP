@@ -7,8 +7,8 @@ This section is a W. I. P. I haven't done anything in this unit yet; which means
 ![Cycle](https://github.com/UP210878/UP210878_CPP/blob/main/U3%20Functions/Images/function.PNG?raw=true)  
 
 
-<h2 align="center">
-Practice 1 [Title]
+<h1 align="center">
+TIC TAC TOE
 </h4>
 
 ### Preview  

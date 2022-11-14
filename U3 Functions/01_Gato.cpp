@@ -101,20 +101,20 @@ int main()
             }
             ganador = VerificarGanador(ganador);
         } while (ganador == false && TurnoJugador < 10);
-        if (TurnoJugador < 10)
+        if (TurnoJugador < 9)
         {
             if (TurnoJugador % 2 == 0)
             {
-                cout << "PLAYER 2 WON\n";
+                cout << "\033[0;31m---------------------------PLAYER 2 WINS------------------------------\033[0m\n";
             }
             else
             {
-                cout << "PLAYER 1 WON\n";
+                cout << "\033[0;34m---------------------------PLAYER 1 WINS------------------------------\033[0m\n";
             }
         }
         else
         {
-            cout << "DRAW\n";
+            cout << "\033[0;33m-------------------------------DRAW------------------------------------\033[0m\n";
         }
     }
     else if (ModoJuego == 2) //--------------------------------------------------CPU------------------------------------------------
@@ -152,16 +152,16 @@ int main()
         {
             if (TurnoJugador % 2 == 0)
             {
-                cout << "YOU LOSE :(\n";
+                cout << "\033[0;31m---------------------------GAME OVER------------------------------\033[0m\n";
             }
             else
             {
-                cout << "YOU WON!\n";
+                cout << "\033[0;32m---------------------------YOU WON--------------------------------\033[0m\n";
             }
         }
         else
         {
-            cout << "DRAW\n";
+            cout << "\033[0;33m-------------------------------DRAW------------------------------------\033[0m\n";
         }
     }
     else
@@ -222,7 +222,19 @@ void Tablero(int)
             }
             else if (columna == 1 || columna == 4 || columna == 7)
             {
-                cout << AreaJuego[x][y];
+                if (AreaJuego[x][y] == 'X')
+                {
+                    cout << "\033[0;34m" << AreaJuego[x][y] << "\033[0m";
+                }else if (AreaJuego[x][y] == 'O')
+                {
+                    cout << "\033[0;31m" << AreaJuego[x][y] << "\033[0m";
+                } else
+                {
+                    cout << AreaJuego[x][y];
+                }
+                
+                
+                
                 y++;
             }
             else
