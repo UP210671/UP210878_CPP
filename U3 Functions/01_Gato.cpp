@@ -12,20 +12,34 @@ Last Modification: 26/10/2022
 #include <time.h>
 
 using namespace std;
-
+/*Main board format*/
 void Tablero(int);
 int TurnoJugador = 0;
+/*Main board*/
 char AreaJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+/*Board used by CPU*/
 char TableroImaginario[3][3] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
+/*Select a play in the board AreaJuego[3][3]*/
 int SeleccionarJugada();
+/*Change value in the vector AreaJuego[3][3]*/
 void ReemplazarCasilla(int Jugada);
+/*Check if the play has already been inputted*/
 bool ComprobarJugadaOcupada(int Jugada);
+/*CPU process to determine if the following play has alread been used in its imaginary board*/
 bool ComprobarJugadaOcupadaImaginaria(int);
+/*Gamemode, 2 players or VS CPU*/
 void ModoDeJuego(int);
+/*Check if someone has won the match*/
 bool VerificarGanador(int Jugada);
+/*CPU process to determine if the following play wins or not*/
 bool VerificarGanadorImaginario(int);
+/*Cloned Board Area for the CPU for calculating all possible plays*/
+void AreaImaginaria();
+/*Value returned by the CPU, random or calculated*/
 int TurnoCPU();
+/*Calculation for all possibilities to determine the best play*/
 int MejorJugada(char);
+
 const char PC = 'O';
 const char HUMANO = 'X';
 const string TABLERO = "Real";
@@ -46,9 +60,9 @@ int main()
     int tablero, jugador1, jugador2, computadora, jugada,ModoJuego, CPU;
     bool casillaocupada = true, ganador = false;
     Tablero(tablero);
-    cout << "Que modo de juego deseas jugar?\n1. VS HUMANO\n2. VS CPU\n";
+    cout << "------GAMEMODE------\n1. VS\n2. Singleplayer\n";
     cin >> ModoJuego;
-    if (ModoJuego==1)
+    if (ModoJuego==1)//----------------------------------------------Player vs Player--------------------------------------------
     {
     do
     {
@@ -58,7 +72,7 @@ int main()
         {
             do
             {
-                cout << "Casilla invalida, elija otra\n";
+                cout << "Invalid play. Try again\n";
                 break;
             } while (casillaocupada == true);
         }
@@ -74,17 +88,17 @@ int main()
     if (TurnoJugador<10){
     if (TurnoJugador % 2 == 0)
     {
-        cout << "Gano el jugador 2\n";
+        cout << "PLAYER 2 WON\n";
     }
     else
     {
-        cout << "Gano el jugador 1\n";
+        cout << "PLAYER 1 WON\n";
     }
     } else{
-        cout << "Empate\n";
+        cout << "DRAW\n";
     }
     } 
-    else if (ModoJuego == 2)//--------------------------------------------------CPU----------------------------------------------
+    else if (ModoJuego == 2)//--------------------------------------------------CPU------------------------------------------------
     {
     do
     {
@@ -101,13 +115,13 @@ int main()
         {
             do
             {
-                cout << "Casilla invalida, elija otra\n";
+                cout << "Invalid play. Try again\n";
                 break;
             } while (casillaocupada == true);
         }
         else if (casillaocupada == false)
         {
-            system("CLS");
+            system("clear");
             ReemplazarCasilla(jugada);
             Tablero(tablero);
             TurnoJugador++;
@@ -117,18 +131,18 @@ int main()
     if (TurnoJugador<9){
     if (TurnoJugador % 2 == 0)
     {
-        cout << "Gano el CPU\n";
+        cout << "YOU LOSE :(\n";
     }
     else
     {
-        cout << "Gano el jugador 1\n";
+        cout << "YOU WON!\n";
     }
     } else{
-        cout << "Empate\n";
+        cout << "DRAW\n";
     }
     } else
     {
-        cout << "No seleccionaste un modo de juego válido :(";
+        cout << "Invalid gamemode :(";
     }
     
     
@@ -140,7 +154,7 @@ int SeleccionarJugada()
     int Jugada;
     do
     {
-        cout << "Jugador " << TurnoJugador%2+1 << " Dame tu jugada del 1 al 9: \n";
+        cout << "Player " << TurnoJugador%2+1 << " turn: \n";
         cin >> Jugada;
     } while (Jugada < 0 || Jugada > 9);
 
@@ -254,8 +268,12 @@ int TurnoCPU()
     {
         return Jugada;
     }
+    while (casillaocupada == false)
+    {
+        casillaocupada = ComprobarJugadaOcupada(Jugada);
+        Jugada = 1 + rand()%9;//En caso de que ninguno ni otro, aleatoria
+    }
     
-    Jugada = 1 + rand()%9;//En caso de que ninguno ni otro, aleatorio
     return Jugada;
 }
 
