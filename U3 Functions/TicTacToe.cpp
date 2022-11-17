@@ -1,4 +1,4 @@
-/*
+/*  WINDOWS VERSION
 Date: 26/10/2022
 Author: Vinc3nt
 Email: up210878@alumnos.upa.edu.mx
@@ -109,7 +109,7 @@ int main()
             }
             else
             {
-                cout << "\033[0;34m-PLAYER 1 WINS-\033[0m\n";
+                cout << "\033[0;36m-PLAYER 1 WINS-\033[0m\n";
             }
         }
         else
@@ -225,7 +225,7 @@ void Tab(int)
             {
                 if (GameArea[x][y] == 'X')
                 {
-                    cout << "\033[0;34m" << GameArea[x][y] << "\033[0m";
+                    cout << "\033[0;36m" << GameArea[x][y] << "\033[0m";
                 }else if (GameArea[x][y] == 'O')
                 {
                     cout << "\033[0;31m" << GameArea[x][y] << "\033[0m";

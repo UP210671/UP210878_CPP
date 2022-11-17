@@ -118,13 +118,57 @@ Made with draw.io/diagram.net. [Check them out!](https://github.com/jgraph/drawi
 <div>
  <b style="color:#0A9"> VS MODE </div> 
 </h3></b>
-Since the Player vs Player mode is pretty straightforward due to both inputs being made by people, I'll use it to cover the basic functioning of the game.</br></br>
+Since the Player vs Player mode is pretty straightforward due to both inputs being made by people, I'll use it to cover the basic functioning of the game. (I'm also using the executable version[Windows] to visualize how it looks) </br></br>
 
-<img style="float: left;" src="Images/Game1.PNG">
-<img style="float: right;" src="Images/Game0.PNG"> </br>
-<p align ="center"> 
-&emsp; GAME STARTING MENU. If you choose another value other than 1 or 2, the game exits automatically. 
-  </p></br></br></br>
+<div align="center">
+
+GAME STARTING MENU.  
+You  have the option to choose between gamemode 1 or 2.  
+If you choose another value other than 1 or 2, the game exits automatically.
+  
+<img src="Images/Game1.PNG" height = 163>
+<img src="Images/Game0.PNG">
+</div></br></br>
+
+ 
+<div align="center">
+
+Upon starting a valid gamemode, the game will ask for the first play to make, make a play by introducing the number of the box in the grid you want to ocupy. 
+
+<img src="Images/Game2.PNG">
+ </div></br></br>
+
+<div align="center">
+
+After introducing the position which you want to mark, the program clears previous plays, prints out a new grid with the indicated mark and starts asking for the move to player 1 and 2 subsequently until there is a winner.  
+
+<img src="Images/Game3.PNG"><img src="Images/Game4.PNG" height = 142>
+ </div></br></br>
+
+
+<div align="center">
+
+If you try to input a play that has already been made the program will ask you again to make a valid play. 
+
+<img src="Images/Game9.PNG" height = 220><img src="Images/Game10.PNG">
+ </div></br></br>
+
+
+<div align="center">
+ If you try to input a play outside the grid, the program will ask you again to make a valid play.
+
+<img src="Images/Game5.PNG" height = 220><img src="Images/Game6.PNG">
+ </div></br></br>
+
+<div align="center">
+<h3>Here's how the winner is visualized</h3>
+
+<img src="Images/Game7.PNG" height = 150><img src="Images/Game8.PNG" height = 150>
+ </div>
+
+ </br></br></br>
+
+
 
 
 
@@ -132,10 +176,51 @@ Since the Player vs Player mode is pretty straightforward due to both inputs bei
 </br></br>
 <h3 align="left">
 <div>
- <b style="color:#0A9"> SINGLEPLAYER/VS CPU  </div> 
+ <b style="color:#0A9"> SINGLEPLAYER/VS CPU/VS A.I.  </div> 
 </h3></b>
-Logical reasoning behind the CPU decisions.
+Logical reasoning behind the A.I decisions. This time using VS Studio code to simulate running it on Linux.</br></br>
 
+<div align="center">
+
+Once again, the first thing we do is input 2 in the menu so that it takes us to the Singleplayer mode. Afterwars we must input out first move.
+
+<img src="Images/CPU0.PNG" height = 200>
+ </div></br></br>
+
+ <div align="center">
+
+The moment we input our move, the A.I analyzes each posible play in a secondary "invisible" grid that would make it win or prevent the player from winning alternating between using 'O' and 'X' respectively. Since the A.I doesn't have a winning move and we aren't about to win, it just chooses a randon non-ocuppied box in the grid. In this case, it chose 1. 
+
+<img src="Images/CPU1.PNG" height = 200>
+ </div></br></br>
+
+<div align="center">
+
+After we input our next move, in this case **6**, the computer once again analyzes the whole grid looking for each possible play that might make it win. Since there's no winning play for _'O'_, it checks afterwards for winning plays for _'X'_. The A.I then discovers that position **5** might make the player win next round so it decides to mark that space in the grid.
+
+<img src="Images/CPU2.PNG" height = 200>
+ </div></br></br>
+
+<div align="center">
+
+Because our brain is so massive we know that **9** would grant the A.I a victory so we proceed to block it and create an opening so that with **3** we may win next round. The A.I once again analyzes the entire grid looking for a play that may make it win. It succeeds but since the box is already marked, it searchs for alternative options for winning. It fails and then searches for plays that may make the player win and in doing so it discovers that **3** makes the player win, so it decides to block it. 
+
+<img src="Images/CPU3.PNG" height = 200>
+ </div></br></br>
+
+ <div align="center">
+
+Afterwars we decide to put our mark at **2** in an attempt to trick the machine. Unfortunately, the A.I analyzes the board in search for winning plays and finds out that **7** is a viable play for it to win so it proceeds to mark that box and end the match.
+
+<img src="Images/CPU4.PNG" height = 200>
+ </div></br></br>
+
+  <div align="center">
+
+This doesn't mean the A.I is invincible. Since its first play is random, it's just a matter of luck and thinking to outsmart it and end the match in a draw or even win.
+
+<img src="Images/CPU5.PNG" height = 200><img src="Images/CPU6.PNG" height = 200>
+ </div></br></br>
 
 </br></br></br></br></br>
 
@@ -150,4 +235,4 @@ The code is also really messy and could've used some more refining to make it mo
 
 All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  </br></br>
 
-I also learned that github markdown does not allow any kinds of styles, not CSS nor HTML which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
+I also learned that github markdown does not allow some kinds of styles specially the color text ones, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
