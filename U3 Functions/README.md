@@ -203,14 +203,14 @@ After we input our next move, in this case **6**, the computer once again analyz
 
 <div align="center">
 
-Because our brain is so massive we know that **9** would grant the A.I a victory so we proceed to block it and create an opening so that with **3** we may win next round. The A.I once again analyzes the entire grid looking for a play that may make it win. It succeeds but since the box is already marked, it searchs for alternative options for winning. It fails and then searches for plays that may make the player win and in doing so it discovers that **3** makes the player win, so it decides to block it. 
+Because our brain is so massive we know that **9** would grant the A.I a victory so we proceed to block it and create an opening so that with **3** we may win next round. The A.I once again analyzes the entire grid looking for a play that may make it win. It succeeds but since the box is already marked, it searches for alternative options for winning. It fails and then searches for plays that may make the player win and in doing so it discovers that **3** would make the player win, so it decides to block it. 
 
 <img src="Images/CPU3.PNG" height = 200>
  </div></br></br>
 
  <div align="center">
 
-Afterwars we decide to put our mark at **2** in an attempt to trick the machine. Unfortunately, the A.I analyzes the board in search for winning plays and finds out that **7** is a viable play for it to win so it proceeds to mark that box and end the match.
+Afterwars we decide to put our mark at **2** in an attempt to trick the machine. Unfortunately, the A.I analyzes the board in search for winning plays and finds out that **7** is a viable play for it to win the round so it proceeds to mark that box and end the match.
 
 <img src="Images/CPU4.PNG" height = 200>
  </div></br></br>
@@ -235,4 +235,5 @@ The code is also really messy and could've used some more refining to make it mo
 
 All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  </br></br>
 
-I also learned that github readme markdown file does not allow some kinds of styles, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
+I also learned that github readme markdown file does not allow some kinds of styles, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything.
+</br></br></br></br></br></br></br></br></br></br>
