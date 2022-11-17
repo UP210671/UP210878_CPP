@@ -28,7 +28,7 @@
 
 [5- Flowchart](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--flowchart--)  
 
-[6- Code development & explanation](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--code-development--explanation--)  
+[6- Code execution & explanation](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--code-execution--explanation--)  
 
 [7- Closure](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--closure--)  
 
