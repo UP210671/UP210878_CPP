@@ -71,6 +71,12 @@ OR</br></br>
 
 </br></br></br></br></br></br></br>
 
+<h3> 
+
+[Return to index](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--index--)
+
+</h3> 
+
 <h2 align="center">
 <div>
  <b style="color:#F07777"><i> THINGS TO CONSIDER </div> 
@@ -96,11 +102,16 @@ OR</br></br>
 
 </b></br><div align="center">I'm still trying to solve these issues but in the meantime I kindly ask for you (the user) to avoid these mistakes. Thank you :D.</div></br></br></br></br></br>
 
+<h3> 
+
+[Return to index](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--index--)
+
+</h3> 
+
 <h2 align="center">
 <div>
  <b style="color:#399999"><i> FLOWCHART </div> 
 </h2></b></i>
-
 
 </br>
 <div align="center">
@@ -109,6 +120,12 @@ OR</br></br>
 
 Made with draw.io/diagram.net. [Check them out!](https://github.com/jgraph/drawio-desktop) [Here's their website too!](https://www.diagrams.net/)
 </br></br></br></br></br>
+
+<h3> 
+
+[Return to index](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--index--)
+
+</h3> 
 
 <h2 align="center">
 <div>
@@ -222,6 +239,12 @@ This doesn't mean the A.I is invincible. Since its first play is random, it's ju
 <img src="Images/CPU5.PNG" height = 200> &emsp; <img src="Images/CPU6.PNG" height = 200>
  </div></br></br>
 
+<h3> 
+
+[Return to index](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--index--)
+
+</h3> 
+
 </br></br></br></br></br>
 
 <h2 align="center">
@@ -237,3 +260,9 @@ All problems aside, I consider I did the task succesfully and the program (for t
 
 I also learned that github readme markdown file does not allow some kinds of styles, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything.
 </br></br></br></br></br></br></br></br></br></br>
+
+<h3> 
+
+[Return to index](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--index--)
+
+</h3> 
