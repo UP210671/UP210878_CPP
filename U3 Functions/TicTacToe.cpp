@@ -178,7 +178,7 @@ int SelectPlay()
     {
         cout << "Player " << PlayerTurn % 2 + 1 << " turn: \n";
         cin >> Play;
-    } while (Play < 0 || Play > 9);
+    } while (Play < 1 || Play > 9);
     return Play;
 }
 
