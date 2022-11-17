@@ -1,28 +1,3 @@
-<style>
-a:link {
-  color: blue;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: cyan;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
-}
-</style> 
 
 <h1 align="center">
 <div align ="center">
@@ -45,15 +20,15 @@ a:active {
 
 [2- CODE TIC TAC TOE (WINDOWS)](./TicTacToe.cpp)  || [DOWNLOAD EXE (WINDOWS)](./TicTacToe.exe)
 
-[3- How to run]()  
+[3- How to run](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--how-to-run--)  
 
-[4- Things to consider]()  
+[4- Things to consider](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--things-to-consider--)  
 
-[5- Flowchart]()  
+[5- Flowchart](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--flowchart--)  
 
-[6- Code development & explanation]()  
+[6- Code development & explanation](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--code-development--explanation--)  
 
-[7- Closure]()  
+[7- Closure](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--closure--)  
 
 </h3></b></br></br></br></br></br>
 
