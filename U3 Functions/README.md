@@ -85,7 +85,7 @@ OR</br></br>
  <span style="color:red">Possible Errors</span>.</div> 
 </h3></b></i>
 
-<b>First and foremost, this tic-tac-toe is not perfect in any way shape or form.</b> Its very possible that the program may not run as expected sometimes and that may be due to a missinput, a compiling mistake or another error I've yet to figure out. I'm aiming to make this better but there are some time restrains due to college that may hinder the development of this, but I do intend on coming back to make some adjustments.</br></br>That being said, there are some common mistakes one can make when playing with this that may lead to the program to crash, these mistakes include but are not limited to:
+<b>First and foremost, this tic-tac-toe is not perfect in any way shape or form.</b> Its very possible that the program may not run as expected sometimes and that may be due to a missinput, a compiling mistake or another error I've yet to figure out. I'm aiming to make this better but there are some time restrains due to college and personal issues that may hinder the further development of this, but I do intend on coming back to make some adjustments.</br></br>That being said, there are some common mistakes one can make when playing with this that may lead to the program to crash, these mistakes include but are not limited to:
 <b>
 
 1. Introducing a character instead of a number </br></br> <div align="center">
