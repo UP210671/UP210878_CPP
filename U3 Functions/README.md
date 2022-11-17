@@ -104,7 +104,7 @@ OR</br></br>
 
 </br>
 <div align="center">
-<img alt="FlowChart" src="Images/FlowChart.png"/>
+<img alt="FlowChart" src="Images/Flowchart.png"/>
 </div>
 
 Made with draw.io/diagram.net. [Check them out!](https://github.com/jgraph/drawio-desktop) [Here's their website too!](https://www.diagrams.net/)
@@ -133,12 +133,12 @@ Logical reasoning behind the CPU decisions.
 <h2 align="center">
 <div>
  <b style="color:#BFFF"><i> CLOSURE </div> 
-</h2></b></i>
+</h2></b></i></br>
 
-This project was a lot of fun to make; until we introduced the A.I. It was hard for me to grasp the reasoning behind the A.I decisions and it was more difficult figuring out how to make the A.I "think" by analizing the whole board. At first I was developing a macro rather than an A.I because what it did initially was play based on the user inputs but without analyzing or "thinking" before doing so. Basically, I was programming a set of instrucions based on the play inputs rather than an Artificial Intelligence.  
+This project was a lot of fun to make; until we introduced the A.I. It was hard for me to grasp the reasoning behind the A.I decisions and it was more difficult figuring out how to make the A.I "think" by analizing the whole board. At first I was developing a macro rather than an A.I because what it did initially was play based on the user inputs but without analyzing or "thinking" before doing so. Basically, I was programming a set of instrucions based on the play inputs rather than an Artificial Intelligence. However with the help of my peers and some research I was finally able to figure out how to make it "think".  </br></br>
 
-I also feel that my code is really messy and could've used some more refining to make it more readable; I think the biggest problem was overloading the main function, I should've made more functions that replaced some of the things I did in the main function because while reading it I feel like I repeat myself a lot.  
+The code is also really messy and could've used some more refining to make it more readable; The biggest issue by far was overloading the main function, I should've made more functions that replaced some of the things I did in the main function because while reading it I feel like the code repeats itself a lot.  </br></br>
 
-All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  
+All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  </br></br>
 
-I also learned that github markdown does not allow any kinds of styles, not CSS nor HTML which is a shame because I like colors :disappointed: (Still allows for emojis tho) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
+I also learned that github markdown does not allow any kinds of styles, not CSS nor HTML which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
