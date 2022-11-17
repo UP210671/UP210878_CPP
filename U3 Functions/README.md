@@ -1,4 +1,6 @@
 
+
+
 <h1 align="center">
 <div align ="center">
  <h2 style="color:#FFD700"> TIC TAC TOE 
@@ -31,8 +33,6 @@
 [7- Closure](https://github.com/UP210878/UP210878_CPP/tree/main/U3%20Functions#--closure--)  
 
 </h3></b></br></br></br></br></br>
-
-
     
 <h2 align="center">
 <div>
@@ -51,7 +51,7 @@ Select your play on the board using number 1-9.
 2. Make sure you already have a compiler. More info: https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/</br></br>
 3. Through the terminal, enter the directory where you cloned the repository using the cd command. (E.g: cd C:\Users\\(Username)\Desktop\UP210878_CPP\U3 Functions)</br></br>
 4. While in the directory of the repository in <i>U3 Functions</i>, type: ./TicTacToe.</br></br>
-5. Enjoy.</br></br></br>
+5. Enjoy :D.</br></br></br>
 
 <h3 align="left">
 <div>
@@ -99,17 +99,33 @@ OR</br></br>
 <h2 align="center">
 <div>
  <b style="color:#399999"><i> FLOWCHART </div> 
-</h2></b></br></i>
+</h2></b></i>
 
 
+</br>
+<div align="center">
+<img alt="FlowChart" src="Images/FlowChart.png"/>
+</div>
 
+Made with draw.io/diagram.net. [Check them out!](https://github.com/jgraph/drawio-desktop) [Here's their website too!](https://www.diagrams.net/)
 </br></br></br></br></br>
 
 <h2 align="center">
 <div>
- <b style="color:#FF6"><i> CODE DEVELOPMENT & EXPLANATION </div> 
-</h2></b></br></i>
+ <b style="color:#FF6"><i> CODE EXECUTION & EXPLANATION </div> 
+</h2></b></i>
+<h3 align="left">
+<div>
+ <b style="color:#0A9"> VS MODE </div> 
+</h3></b>
+Since the Player vs Player mode is pretty straightforward due to both inputs being made by people, I'll use it to cover the basic functioning of the game.
 
+</br></br>
+<h3 align="left">
+<div>
+ <b style="color:#0A9"> SINGLEPLAYER/VS CPU  </div> 
+</h3></b>
+Logical reasoning behind the CPU decisions.
 
 
 </br></br></br></br></br>
@@ -117,4 +133,12 @@ OR</br></br>
 <h2 align="center">
 <div>
  <b style="color:#BFFF"><i> CLOSURE </div> 
-</h2></b></br></i>
+</h2></b></i>
+
+This project was a lot of fun to make; until we introduced the A.I. It was hard for me to grasp the reasoning behind the A.I decisions and it was more difficult figuring out how to make the A.I "think" by analizing the whole board. At first I was developing a macro rather than an A.I because what it did initially was play based on the user inputs but without analyzing or "thinking" before doing so. Basically, I was programming a set of instrucions based on the play inputs rather than an Artificial Intelligence.  
+
+I also feel that my code is really messy and could've used some more refining to make it more readable; I think the biggest problem was overloading the main function, I should've made more functions that replaced some of the things I did in the main function because while reading it I feel like I repeat myself a lot.  
+
+All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  
+
+I also learned that github markdown does not allow any kinds of styles, not CSS nor HTML which is a shame because I like colors :disappointed: (Still allows for emojis tho) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 

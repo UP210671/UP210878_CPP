@@ -2,8 +2,8 @@
 Date: 26/10/2022
 Author: Vinc3nt
 Email: up210878@alumnos.upa.edu.mx
-Description: ?
-Last Modification: 26/10/2022
+Description: TicTacToe Game for Linux (system clear function)
+Last Modification: 17/10/2022
 */
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
