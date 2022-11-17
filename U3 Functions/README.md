@@ -217,9 +217,9 @@ Afterwars we decide to put our mark at **2** in an attempt to trick the machine.
 
   <div align="center">
 
-This doesn't mean the A.I is invincible. Since its first play is random, it's just a matter of luck and thinking to outsmart it and end the match in a draw or even win.
+This doesn't mean the A.I is invincible. Since its first play is random, it's just a matter of luck and thinking to outsmart it so that we can end the match in a draw or even win.
 
-<img src="Images/CPU5.PNG" height = 200><img src="Images/CPU6.PNG" height = 200>
+<img src="Images/CPU5.PNG" height = 200> &emsp; <img src="Images/CPU6.PNG" height = 200>
  </div></br></br>
 
 </br></br></br></br></br>
@@ -235,4 +235,4 @@ The code is also really messy and could've used some more refining to make it mo
 
 All problems aside, I consider I did the task succesfully and the program (for the most part) runs smoothly and does what it's supposed to do so I'd consider I was somewhat succesful in my program.  </br></br>
 
-I also learned that github markdown does not allow some kinds of styles specially the color text ones, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
+I also learned that github readme markdown file does not allow some kinds of styles, not CSS nor HTML work for coloring text which is a shame because I like colors :disappointed: (Still allows for emojis though) . Fun fact, If you preview this Readme.md through VS Studio or the like, the markdown will read just fine, with color styles and everything. 
