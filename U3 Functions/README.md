@@ -118,7 +118,16 @@ Made with draw.io/diagram.net. [Check them out!](https://github.com/jgraph/drawi
 <div>
  <b style="color:#0A9"> VS MODE </div> 
 </h3></b>
-Since the Player vs Player mode is pretty straightforward due to both inputs being made by people, I'll use it to cover the basic functioning of the game.
+Since the Player vs Player mode is pretty straightforward due to both inputs being made by people, I'll use it to cover the basic functioning of the game.</br></br>
+
+<img style="float: left;" src="Images/Game1.PNG">
+<img style="float: right;" src="Images/Game0.PNG"> </br>
+<p align ="center"> 
+&emsp; GAME STARTING MENU. If you choose another value other than 1 or 2, the game exits automatically. 
+  </p></br></br></br>
+
+
+
 
 </br></br>
 <h3 align="left">

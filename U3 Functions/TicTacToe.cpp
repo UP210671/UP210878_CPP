@@ -168,6 +168,7 @@ int main()
     {
         cout << "Invalid gamemode :(";
     }
+    system("pause");
     return 0;
 }
 
