@@ -48,9 +48,13 @@ Select your play on the board using number 1-9.
 </h3></b></br>
 
 1. Download or clone the directory in github. (Using the command <q><i>git clone https://github.com/UP210878/UP210878_CPP.git</q></i>)</br></br>
+   
 2. Make sure you already have a compiler. More info: https://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/</br></br>
+   
 3. Through the terminal, enter the directory where you cloned the repository using the cd command. (E.g: cd C:\Users\\(Username)\Desktop\UP210878_CPP\U3 Functions)</br></br>
-4. While in the directory of the repository in <i>U3 Functions</i>, type: ./TicTacToe.</br></br>
+   
+4. While in the directory of the repository in <i>U3 Functions</i>, type: cd "/home/(USER)/UP210878_CPP/U3 Functions/" && g++ TicTacToe_Linux.cpp -o TicTacToe_Linux && "/home/estudiantes/Documentos/UP210878/UP210878_CPP/U3 Functions/"TicTacToe_Linux</br></br>
+   
 5. Enjoy :D.</br></br></br>
 
 <h3 align="left">

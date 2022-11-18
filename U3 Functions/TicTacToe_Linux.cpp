@@ -8,6 +8,8 @@ Last Modification: 17/10/2022
 
 //------------ PREPROCESSOR DIRECTIVES ----------------
 #include <iostream>
+#include <unistd.h>
+/* delay(100) command */
 
 using namespace std;
 /*Main board format*/
@@ -55,6 +57,7 @@ int CPUTurn();
 Params:
 VerificarGanadorImaginario, AreaImaginaria, ComprobarJugadaOcupadaImaginaria, ReemplazarCasillaXImaginaria, ReemplazarCasillaOImaginaria*/
 int BestPlay(char);
+void gotoxy(int x, int y);
 
 const char PC = 'O';
 const char HUMAN = 'X';
@@ -76,10 +79,19 @@ int main()
     int board, play, GameMode, CPU;
     bool playocuppied = true, winner = false;
     Tab(board);
-    cout << "------GAMEMODE------\n1. VS\n2. Singleplayer\n";
+    gotoxy (70,16);
+    cout << "------GAMEMODE------";
+    gotoxy (70,17);
+    cout << "1. VS ";
+    gotoxy (70,18);
+    cout << "2. Singleplayer\n";
+    gotoxy (70,19);
+    cout << "Gamemode: ";
     cin >> GameMode;
     if (GameMode == 1) //----------------------------------------------Player vs Player--------------------------------------------
     {
+        system("clear");
+        Tab(board);
         do
         {
             play = SelectPlay();
@@ -176,6 +188,7 @@ int SelectPlay()
     int Play;
     do
     {
+        gotoxy (75,14);
         cout << "Player " << PlayerTurn % 2 + 1 << " turn: \n";
         cin >> Play;
     } while (Play < 0 || Play > 9);
@@ -214,6 +227,7 @@ void Tab(int)
     int x = 0, y = 0;
     for (int row = 0; row < 5; row++)
     {
+        gotoxy (75,8+row);
         for (int col = 0; col < 9; col++)
         {
             if (row == 1 || row == 3)
@@ -414,3 +428,13 @@ int BestPlay(char PlayerType)
     }
     return CPUPlay;
 }
+
+void gotoxy(int x, int y){
+    cout << "\033[" << y << ";" << x << "f";
+}
+
+/*int main(){
+    gotoxy(10,4);
+    cout << Hola;
+}
+*/
